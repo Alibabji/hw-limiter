@@ -171,6 +171,13 @@ void MainWindow::ApplyCpuTarget() {
         UpdateStatus(QStringLiteral("Select a CPU target first"));
         return;
     }
+    if (state_.selectedCpu->requiresConfirmation) {
+        const auto label = QString::fromStdString(state_.selectedCpu->label);
+        if (!ConfirmHighImpact(label)) {
+            UpdateStatus(QStringLiteral("Action cancelled by user"));
+            return;
+        }
+    }
     auto result = state_.throttler.ApplyCpuTarget(*state_.selectedCpu);
     UpdateStatus(QString::fromWCharArray(result.message.c_str()));
 }
@@ -179,6 +186,13 @@ void MainWindow::ApplyGpuTarget() {
     if (!state_.selectedGpu) {
         UpdateStatus(QStringLiteral("Select a GPU target first"));
         return;
+    }
+    if (state_.selectedGpu->requiresConfirmation) {
+        const auto label = QString::fromStdString(state_.selectedGpu->label);
+        if (!ConfirmHighImpact(label)) {
+            UpdateStatus(QStringLiteral("Action cancelled by user"));
+            return;
+        }
     }
     auto result = state_.throttler.ApplyGpuTarget(*state_.selectedGpu);
     UpdateStatus(QString::fromWCharArray(result.message.c_str()));
@@ -203,6 +217,21 @@ void MainWindow::UpdateButtonStates() {
     applyCpuButton_->setEnabled(hasCpu);
     applyGpuButton_->setEnabled(hasGpu);
     restoreButton_->setEnabled(state_.initialized);
+}
+
+bool MainWindow::ConfirmHighImpact(const QString& targetLabel) const {
+    const QString text = tr(
+        "Applying \"%1\" will enforce an aggressive limit that may impact stability or cooling.\n\n"
+        "Proceed only if you understand the risks. All responsibility lies with the operator.\n\n"
+        "Continue?")
+        .arg(targetLabel);
+    const auto choice = QMessageBox::warning(
+        const_cast<MainWindow*>(this),
+        tr("High Impact Throttle"),
+        text,
+        QMessageBox::Yes | QMessageBox::No,
+        QMessageBox::No);
+    return choice == QMessageBox::Yes;
 }
 
 std::filesystem::path MainWindow::ResolveProfilesPath() const {

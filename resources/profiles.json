@@ -1,86 +1,4051 @@
 {
   "cpuProfiles": [
     {
-      "id": "intel-i7-13700k",
-      "label": "Intel Core i7-13700K",
-      "matchTokens": ["i7-13700k", "13700k"],
+      "id": "intel-i3-gen7",
+      "label": "Intel Core i3 7th Gen (Kaby Lake)",
+      "matchTokens": [
+        "i3-7",
+        "core i3 7",
+        "core i3 7th",
+        "i3 7th"
+      ],
       "targets": [
         {
-          "id": "intel-i7-10700",
-          "label": "Mimic Intel Core i7-10700",
-          "maxFrequencyMHz": 4700,
-          "maxCores": 8,
-          "maxThreads": 16,
-          "maxPercent": 75,
-          "extraCommands": [
-            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
-          ]
-        },
-        {
-          "id": "intel-i7-6700",
-          "label": "Mimic Intel Core i7-6700",
+          "id": "intel-i3-gen7-to-gen6",
+          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
           "maxFrequencyMHz": 4000,
-          "maxCores": 4,
-          "maxThreads": 8,
-          "maxPercent": 60,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
           "extraCommands": [
-            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 1"
-          ]
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
         }
       ]
     },
     {
-      "id": "amd-ryzen-9-7950x",
-      "label": "AMD Ryzen 9 7950X",
-      "matchTokens": ["7950x", "ryzen 9 7950"],
+      "id": "intel-i3-gen8",
+      "label": "Intel Core i3 8th Gen (Coffee Lake)",
+      "matchTokens": [
+        "i3-8",
+        "core i3 8",
+        "core i3 8th",
+        "i3 8th"
+      ],
       "targets": [
         {
-          "id": "amd-ryzen-7-5800x",
-          "label": "Mimic Ryzen 7 5800X",
-          "maxFrequencyMHz": 4500,
-          "maxCores": 8,
-          "maxThreads": 16,
-          "maxPercent": 70,
+          "id": "intel-i3-gen8-to-gen7",
+          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
           "extraCommands": [
             "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
-          ]
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen8-to-gen6",
+          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 44,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "intel-i3-gen9",
+      "label": "Intel Core i3 9th Gen (Coffee Lake Refresh)",
+      "matchTokens": [
+        "i3-9",
+        "core i3 9",
+        "core i3 9th",
+        "i3 9th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i3-gen9-to-gen8",
+          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen9-to-gen7",
+          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 44,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen9-to-gen6",
+          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 36,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i3-gen10",
+      "label": "Intel Core i3 10th Gen (Comet Lake)",
+      "matchTokens": [
+        "i3-10",
+        "core i3 10",
+        "core i3 10th",
+        "i3 10th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i3-gen10-to-gen9",
+          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen10-to-gen8",
+          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 44,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen10-to-gen7",
+          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 36,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i3-gen11",
+      "label": "Intel Core i3 11th Gen (Rocket Lake)",
+      "matchTokens": [
+        "i3-11",
+        "core i3 11",
+        "core i3 11th",
+        "i3 11th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i3-gen11-to-gen10",
+          "label": "Mimic Intel Core i3 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen11-to-gen9",
+          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 44,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen11-to-gen8",
+          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 36,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i3-gen12",
+      "label": "Intel Core i3 12th Gen (Alder Lake)",
+      "matchTokens": [
+        "i3-12",
+        "core i3 12",
+        "core i3 12th",
+        "i3 12th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i3-gen12-to-gen11",
+          "label": "Mimic Intel Core i3 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen12-to-gen10",
+          "label": "Mimic Intel Core i3 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 44,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen12-to-gen9",
+          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 36,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i3-gen13",
+      "label": "Intel Core i3 13th Gen (Raptor Lake)",
+      "matchTokens": [
+        "i3-13",
+        "core i3 13",
+        "core i3 13th",
+        "i3 13th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i3-gen13-to-gen12",
+          "label": "Mimic Intel Core i3 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen13-to-gen11",
+          "label": "Mimic Intel Core i3 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 44,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen13-to-gen10",
+          "label": "Mimic Intel Core i3 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 36,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i3-gen14",
+      "label": "Intel Core i3 14th Gen (Raptor Lake Refresh)",
+      "matchTokens": [
+        "i3-14",
+        "core i3 14",
+        "core i3 14th",
+        "i3 14th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i3-gen14-to-gen13",
+          "label": "Mimic Intel Core i3 13th Gen (Raptor Lake)",
+          "maxFrequencyMHz": 5300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 52,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen14-to-gen12",
+          "label": "Mimic Intel Core i3 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 44,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i3-gen14-to-gen11",
+          "label": "Mimic Intel Core i3 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 36,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen7",
+      "label": "Intel Core i5 7th Gen (Kaby Lake)",
+      "matchTokens": [
+        "i5-7",
+        "core i5 7",
+        "core i5 7th",
+        "i5 7th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen7-to-gen6",
+          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen8",
+      "label": "Intel Core i5 8th Gen (Coffee Lake)",
+      "matchTokens": [
+        "i5-8",
+        "core i5 8",
+        "core i5 8th",
+        "i5 8th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen8-to-gen7",
+          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen8-to-gen6",
+          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 54,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen9",
+      "label": "Intel Core i5 9th Gen (Coffee Lake Refresh)",
+      "matchTokens": [
+        "i5-9",
+        "core i5 9",
+        "core i5 9th",
+        "i5 9th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen9-to-gen8",
+          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen9-to-gen7",
+          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 54,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen9-to-gen6",
+          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen10",
+      "label": "Intel Core i5 10th Gen (Comet Lake)",
+      "matchTokens": [
+        "i5-10",
+        "core i5 10",
+        "core i5 10th",
+        "i5 10th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen10-to-gen9",
+          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen10-to-gen8",
+          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 54,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen10-to-gen7",
+          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen11",
+      "label": "Intel Core i5 11th Gen (Rocket Lake)",
+      "matchTokens": [
+        "i5-11",
+        "core i5 11",
+        "core i5 11th",
+        "i5 11th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen11-to-gen10",
+          "label": "Mimic Intel Core i5 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen11-to-gen9",
+          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 54,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen11-to-gen8",
+          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen12",
+      "label": "Intel Core i5 12th Gen (Alder Lake)",
+      "matchTokens": [
+        "i5-12",
+        "core i5 12",
+        "core i5 12th",
+        "i5 12th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen12-to-gen11",
+          "label": "Mimic Intel Core i5 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen12-to-gen10",
+          "label": "Mimic Intel Core i5 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 54,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen12-to-gen9",
+          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen13",
+      "label": "Intel Core i5 13th Gen (Raptor Lake)",
+      "matchTokens": [
+        "i5-13",
+        "core i5 13",
+        "core i5 13th",
+        "i5 13th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen13-to-gen12",
+          "label": "Mimic Intel Core i5 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen13-to-gen11",
+          "label": "Mimic Intel Core i5 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 54,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen13-to-gen10",
+          "label": "Mimic Intel Core i5 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i5-gen14",
+      "label": "Intel Core i5 14th Gen (Raptor Lake Refresh)",
+      "matchTokens": [
+        "i5-14",
+        "core i5 14",
+        "core i5 14th",
+        "i5 14th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i5-gen14-to-gen13",
+          "label": "Mimic Intel Core i5 13th Gen (Raptor Lake)",
+          "maxFrequencyMHz": 5300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 62,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen14-to-gen12",
+          "label": "Mimic Intel Core i5 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 54,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i5-gen14-to-gen11",
+          "label": "Mimic Intel Core i5 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen7",
+      "label": "Intel Core i7 7th Gen (Kaby Lake)",
+      "matchTokens": [
+        "i7-7",
+        "core i7 7",
+        "core i7 7th",
+        "i7 7th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen7-to-gen6",
+          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen8",
+      "label": "Intel Core i7 8th Gen (Coffee Lake)",
+      "matchTokens": [
+        "i7-8",
+        "core i7 8",
+        "core i7 8th",
+        "i7 8th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen8-to-gen7",
+          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen8-to-gen6",
+          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen9",
+      "label": "Intel Core i7 9th Gen (Coffee Lake Refresh)",
+      "matchTokens": [
+        "i7-9",
+        "core i7 9",
+        "core i7 9th",
+        "i7 9th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen9-to-gen8",
+          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen9-to-gen7",
+          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen9-to-gen6",
+          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen10",
+      "label": "Intel Core i7 10th Gen (Comet Lake)",
+      "matchTokens": [
+        "i7-10",
+        "core i7 10",
+        "core i7 10th",
+        "i7 10th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen10-to-gen9",
+          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen10-to-gen8",
+          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen10-to-gen7",
+          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen11",
+      "label": "Intel Core i7 11th Gen (Rocket Lake)",
+      "matchTokens": [
+        "i7-11",
+        "core i7 11",
+        "core i7 11th",
+        "i7 11th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen11-to-gen10",
+          "label": "Mimic Intel Core i7 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen11-to-gen9",
+          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen11-to-gen8",
+          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen12",
+      "label": "Intel Core i7 12th Gen (Alder Lake)",
+      "matchTokens": [
+        "i7-12",
+        "core i7 12",
+        "core i7 12th",
+        "i7 12th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen12-to-gen11",
+          "label": "Mimic Intel Core i7 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen12-to-gen10",
+          "label": "Mimic Intel Core i7 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen12-to-gen9",
+          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen13",
+      "label": "Intel Core i7 13th Gen (Raptor Lake)",
+      "matchTokens": [
+        "i7-13",
+        "core i7 13",
+        "core i7 13th",
+        "i7 13th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen13-to-gen12",
+          "label": "Mimic Intel Core i7 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen13-to-gen11",
+          "label": "Mimic Intel Core i7 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen13-to-gen10",
+          "label": "Mimic Intel Core i7 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i7-gen14",
+      "label": "Intel Core i7 14th Gen (Raptor Lake Refresh)",
+      "matchTokens": [
+        "i7-14",
+        "core i7 14",
+        "core i7 14th",
+        "i7 14th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i7-gen14-to-gen13",
+          "label": "Mimic Intel Core i7 13th Gen (Raptor Lake)",
+          "maxFrequencyMHz": 5300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 72,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen14-to-gen12",
+          "label": "Mimic Intel Core i7 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i7-gen14-to-gen11",
+          "label": "Mimic Intel Core i7 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen7",
+      "label": "Intel Core i9 7th Gen (Kaby Lake)",
+      "matchTokens": [
+        "i9-7",
+        "core i9 7",
+        "core i9 7th",
+        "i9 7th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen7-to-gen6",
+          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen8",
+      "label": "Intel Core i9 8th Gen (Coffee Lake)",
+      "matchTokens": [
+        "i9-8",
+        "core i9 8",
+        "core i9 8th",
+        "i9 8th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen8-to-gen7",
+          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen8-to-gen6",
+          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 69,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen9",
+      "label": "Intel Core i9 9th Gen (Coffee Lake Refresh)",
+      "matchTokens": [
+        "i9-9",
+        "core i9 9",
+        "core i9 9th",
+        "i9 9th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen9-to-gen8",
+          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen9-to-gen7",
+          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 69,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen9-to-gen6",
+          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 61,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen10",
+      "label": "Intel Core i9 10th Gen (Comet Lake)",
+      "matchTokens": [
+        "i9-10",
+        "core i9 10",
+        "core i9 10th",
+        "i9 10th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen10-to-gen9",
+          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen10-to-gen8",
+          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 69,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen10-to-gen7",
+          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "maxFrequencyMHz": 4100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 61,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen11",
+      "label": "Intel Core i9 11th Gen (Rocket Lake)",
+      "matchTokens": [
+        "i9-11",
+        "core i9 11",
+        "core i9 11th",
+        "i9 11th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen11-to-gen10",
+          "label": "Mimic Intel Core i9 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen11-to-gen9",
+          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 69,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen11-to-gen8",
+          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 61,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen12",
+      "label": "Intel Core i9 12th Gen (Alder Lake)",
+      "matchTokens": [
+        "i9-12",
+        "core i9 12",
+        "core i9 12th",
+        "i9 12th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen12-to-gen11",
+          "label": "Mimic Intel Core i9 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen12-to-gen10",
+          "label": "Mimic Intel Core i9 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 69,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen12-to-gen9",
+          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 61,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen13",
+      "label": "Intel Core i9 13th Gen (Raptor Lake)",
+      "matchTokens": [
+        "i9-13",
+        "core i9 13",
+        "core i9 13th",
+        "i9 13th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen13-to-gen12",
+          "label": "Mimic Intel Core i9 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen13-to-gen11",
+          "label": "Mimic Intel Core i9 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 69,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen13-to-gen10",
+          "label": "Mimic Intel Core i9 10th Gen (Comet Lake)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 61,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "intel-i9-gen14",
+      "label": "Intel Core i9 14th Gen (Raptor Lake Refresh)",
+      "matchTokens": [
+        "i9-14",
+        "core i9 14",
+        "core i9 14th",
+        "i9 14th"
+      ],
+      "targets": [
+        {
+          "id": "intel-i9-gen14-to-gen13",
+          "label": "Mimic Intel Core i9 13th Gen (Raptor Lake)",
+          "maxFrequencyMHz": 5300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 77,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen14-to-gen12",
+          "label": "Mimic Intel Core i9 12th Gen (Alder Lake)",
+          "maxFrequencyMHz": 5100,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 69,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "intel-i9-gen14-to-gen11",
+          "label": "Mimic Intel Core i9 11th Gen (Rocket Lake)",
+          "maxFrequencyMHz": 4900,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 61,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 4"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen3-2000",
+      "label": "AMD Ryzen 3 2nd Gen (Zen+)",
+      "matchTokens": [
+        "ryzen 3 20",
+        "ryzen 3-20",
+        "ryzen 3 2000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen3-2000-to-1000",
+          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen3-3000",
+      "label": "AMD Ryzen 3 3rd Gen (Zen 2)",
+      "matchTokens": [
+        "ryzen 3 30",
+        "ryzen 3-30",
+        "ryzen 3 3000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen3-3000-to-2000",
+          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen3-3000-to-1000",
+          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 37,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen3-4000",
+      "label": "AMD Ryzen 3 4th Gen (Zen 2 Mobile)",
+      "matchTokens": [
+        "ryzen 3 40",
+        "ryzen 3-40",
+        "ryzen 3 4000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen3-4000-to-3000",
+          "label": "Mimic Ryzen 3 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen3-4000-to-2000",
+          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 37,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "amd-ryzen3-4000-to-1000",
+          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 32,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen3-5000",
+      "label": "AMD Ryzen 3 5th Gen (Zen 3)",
+      "matchTokens": [
+        "ryzen 3 50",
+        "ryzen 3-50",
+        "ryzen 3 5000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen3-5000-to-4000",
+          "label": "Mimic Ryzen 3 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen3-5000-to-3000",
+          "label": "Mimic Ryzen 3 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 37,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "amd-ryzen3-5000-to-2000",
+          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 32,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen3-7000",
+      "label": "AMD Ryzen 3 7th Gen (Zen 4)",
+      "matchTokens": [
+        "ryzen 3 70",
+        "ryzen 3-70",
+        "ryzen 3 7000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen3-7000-to-5000",
+          "label": "Mimic Ryzen 3 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen3-7000-to-4000",
+          "label": "Mimic Ryzen 3 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 37,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "amd-ryzen3-7000-to-3000",
+          "label": "Mimic Ryzen 3 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 32,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen3-8000",
+      "label": "AMD Ryzen 3 8th Gen (Zen 4 Refresh)",
+      "matchTokens": [
+        "ryzen 3 80",
+        "ryzen 3-80",
+        "ryzen 3 8000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen3-8000-to-7000",
+          "label": "Mimic Ryzen 3 7th Gen (Zen 4)",
+          "maxFrequencyMHz": 5200,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 46,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen3-8000-to-5000",
+          "label": "Mimic Ryzen 3 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 37,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "amd-ryzen3-8000-to-4000",
+          "label": "Mimic Ryzen 3 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 32,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen5-2000",
+      "label": "AMD Ryzen 5 2nd Gen (Zen+)",
+      "matchTokens": [
+        "ryzen 5 20",
+        "ryzen 5-20",
+        "ryzen 5 2000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen5-2000-to-1000",
+          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen5-3000",
+      "label": "AMD Ryzen 5 3rd Gen (Zen 2)",
+      "matchTokens": [
+        "ryzen 5 30",
+        "ryzen 5-30",
+        "ryzen 5 3000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen5-3000-to-2000",
+          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-3000-to-1000",
+          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 47,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen5-4000",
+      "label": "AMD Ryzen 5 4th Gen (Zen 2 Mobile)",
+      "matchTokens": [
+        "ryzen 5 40",
+        "ryzen 5-40",
+        "ryzen 5 4000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen5-4000-to-3000",
+          "label": "Mimic Ryzen 5 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-4000-to-2000",
+          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 47,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-4000-to-1000",
+          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 38,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen5-5000",
+      "label": "AMD Ryzen 5 5th Gen (Zen 3)",
+      "matchTokens": [
+        "ryzen 5 50",
+        "ryzen 5-50",
+        "ryzen 5 5000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen5-5000-to-4000",
+          "label": "Mimic Ryzen 5 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-5000-to-3000",
+          "label": "Mimic Ryzen 5 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 47,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-5000-to-2000",
+          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 38,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen5-7000",
+      "label": "AMD Ryzen 5 7th Gen (Zen 4)",
+      "matchTokens": [
+        "ryzen 5 70",
+        "ryzen 5-70",
+        "ryzen 5 7000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen5-7000-to-5000",
+          "label": "Mimic Ryzen 5 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-7000-to-4000",
+          "label": "Mimic Ryzen 5 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 47,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-7000-to-3000",
+          "label": "Mimic Ryzen 5 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 38,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen5-8000",
+      "label": "AMD Ryzen 5 8th Gen (Zen 4 Refresh)",
+      "matchTokens": [
+        "ryzen 5 80",
+        "ryzen 5-80",
+        "ryzen 5 8000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen5-8000-to-7000",
+          "label": "Mimic Ryzen 5 7th Gen (Zen 4)",
+          "maxFrequencyMHz": 5200,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 56,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-8000-to-5000",
+          "label": "Mimic Ryzen 5 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 47,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen5-8000-to-4000",
+          "label": "Mimic Ryzen 5 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 38,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen7-2000",
+      "label": "AMD Ryzen 7 2nd Gen (Zen+)",
+      "matchTokens": [
+        "ryzen 7 20",
+        "ryzen 7-20",
+        "ryzen 7 2000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen7-2000-to-1000",
+          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 66,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen7-3000",
+      "label": "AMD Ryzen 7 3rd Gen (Zen 2)",
+      "matchTokens": [
+        "ryzen 7 30",
+        "ryzen 7-30",
+        "ryzen 7 3000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen7-3000-to-2000",
+          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 66,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-3000-to-1000",
+          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 57,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen7-4000",
+      "label": "AMD Ryzen 7 4th Gen (Zen 2 Mobile)",
+      "matchTokens": [
+        "ryzen 7 40",
+        "ryzen 7-40",
+        "ryzen 7 4000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen7-4000-to-3000",
+          "label": "Mimic Ryzen 7 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 66,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-4000-to-2000",
+          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 57,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-4000-to-1000",
+          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 48,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen7-5000",
+      "label": "AMD Ryzen 7 5th Gen (Zen 3)",
+      "matchTokens": [
+        "ryzen 7 50",
+        "ryzen 7-50",
+        "ryzen 7 5000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen7-5000-to-4000",
+          "label": "Mimic Ryzen 7 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 66,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-5000-to-3000",
+          "label": "Mimic Ryzen 7 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 57,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-5000-to-2000",
+          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 48,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen7-7000",
+      "label": "AMD Ryzen 7 7th Gen (Zen 4)",
+      "matchTokens": [
+        "ryzen 7 70",
+        "ryzen 7-70",
+        "ryzen 7 7000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen7-7000-to-5000",
+          "label": "Mimic Ryzen 7 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 66,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-7000-to-4000",
+          "label": "Mimic Ryzen 7 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 57,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-7000-to-3000",
+          "label": "Mimic Ryzen 7 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 48,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen7-8000",
+      "label": "AMD Ryzen 7 8th Gen (Zen 4 Refresh)",
+      "matchTokens": [
+        "ryzen 7 80",
+        "ryzen 7-80",
+        "ryzen 7 8000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen7-8000-to-7000",
+          "label": "Mimic Ryzen 7 7th Gen (Zen 4)",
+          "maxFrequencyMHz": 5200,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 66,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-8000-to-5000",
+          "label": "Mimic Ryzen 7 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 57,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen7-8000-to-4000",
+          "label": "Mimic Ryzen 7 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 48,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen9-2000",
+      "label": "AMD Ryzen 9 2nd Gen (Zen+)",
+      "matchTokens": [
+        "ryzen 9 20",
+        "ryzen 9-20",
+        "ryzen 9 2000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen9-2000-to-1000",
+          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 73,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen9-3000",
+      "label": "AMD Ryzen 9 3rd Gen (Zen 2)",
+      "matchTokens": [
+        "ryzen 9 30",
+        "ryzen 9-30",
+        "ryzen 9 3000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen9-3000-to-2000",
+          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 73,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-3000-to-1000",
+          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen9-4000",
+      "label": "AMD Ryzen 9 4th Gen (Zen 2 Mobile)",
+      "matchTokens": [
+        "ryzen 9 40",
+        "ryzen 9-40",
+        "ryzen 9 4000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen9-4000-to-3000",
+          "label": "Mimic Ryzen 9 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 73,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-4000-to-2000",
+          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-4000-to-1000",
+          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "maxFrequencyMHz": 3800,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 55,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen9-5000",
+      "label": "AMD Ryzen 9 5th Gen (Zen 3)",
+      "matchTokens": [
+        "ryzen 9 50",
+        "ryzen 9-50",
+        "ryzen 9 5000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen9-5000-to-4000",
+          "label": "Mimic Ryzen 9 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 73,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-5000-to-3000",
+          "label": "Mimic Ryzen 9 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-5000-to-2000",
+          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 55,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen9-7000",
+      "label": "AMD Ryzen 9 7th Gen (Zen 4)",
+      "matchTokens": [
+        "ryzen 9 70",
+        "ryzen 9-70",
+        "ryzen 9 7000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen9-7000-to-5000",
+          "label": "Mimic Ryzen 9 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 73,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-7000-to-4000",
+          "label": "Mimic Ryzen 9 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-7000-to-3000",
+          "label": "Mimic Ryzen 9 3rd Gen (Zen 2)",
+          "maxFrequencyMHz": 4300,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 55,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen9-8000",
+      "label": "AMD Ryzen 9 8th Gen (Zen 4 Refresh)",
+      "matchTokens": [
+        "ryzen 9 80",
+        "ryzen 9-80",
+        "ryzen 9 8000"
+      ],
+      "targets": [
+        {
+          "id": "amd-ryzen9-8000-to-7000",
+          "label": "Mimic Ryzen 9 7th Gen (Zen 4)",
+          "maxFrequencyMHz": 5200,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 73,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-8000-to-5000",
+          "label": "Mimic Ryzen 9 5th Gen (Zen 3)",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 64,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "amd-ryzen9-8000-to-4000",
+          "label": "Mimic Ryzen 9 4th Gen (Zen 2 Mobile)",
+          "maxFrequencyMHz": 4400,
+          "maxCores": 0,
+          "maxThreads": 0,
+          "maxPercent": 55,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ],
+          "requiresConfirmation": true
         }
       ]
     }
   ],
   "gpuProfiles": [
     {
-      "id": "nvidia-rtx-4090",
-      "label": "NVIDIA GeForce RTX 4090",
-      "matchTokens": ["rtx 4090", "4090"],
+      "id": "nvidia-gtx-1050",
+      "label": "NVIDIA GeForce GTX 1050",
+      "matchTokens": [
+        "gtx 1050",
+        "geforce gtx 1050",
+        "gtx 1050"
+      ],
+      "targets": []
+    },
+    {
+      "id": "nvidia-gtx-1050-ti",
+      "label": "NVIDIA GeForce GTX 1050 Ti",
+      "matchTokens": [
+        "gtx 1050 ti",
+        "geforce gtx 1050 ti",
+        "gtx 1050 ti"
+      ],
       "targets": [
         {
-          "id": "nvidia-rtx-3080",
-          "label": "Mimic RTX 3080",
-          "maxFrequencyMHz": 1710,
-          "powerLimitWatts": 320,
-          "nvidiaSmiArgs": ["-lgc", "1400,1400", "-pl", "320"]
+          "id": "nvidia-gtx-1050-ti-to-gtx-1050",
+          "label": "Mimic NVIDIA GeForce GTX 1050",
+          "maxFrequencyMHz": 1493,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1493,1493",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1060-3gb",
+      "label": "NVIDIA GeForce GTX 1060 3GB",
+      "matchTokens": [
+        "gtx 1060 3gb",
+        "geforce gtx 1060 3gb",
+        "gtx 1060 3gb"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1060-3gb-to-gtx-1050-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1050 Ti",
+          "maxFrequencyMHz": 1620,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1620,1620",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
         },
         {
-          "id": "nvidia-rtx-3070",
-          "label": "Mimic RTX 3070",
-          "maxFrequencyMHz": 1725,
-          "powerLimitWatts": 240,
-          "nvidiaSmiArgs": ["-lgc", "1200,1200", "-pl", "240"]
+          "id": "nvidia-gtx-1060-3gb-to-gtx-1050",
+          "label": "Mimic NVIDIA GeForce GTX 1050",
+          "maxFrequencyMHz": 1493,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1493,1493",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1060-6gb",
+      "label": "NVIDIA GeForce GTX 1060 6GB",
+      "matchTokens": [
+        "gtx 1060 6gb",
+        "geforce gtx 1060 6gb",
+        "gtx 1060 6gb"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1060-6gb-to-gtx-1060-3gb",
+          "label": "Mimic NVIDIA GeForce GTX 1060 3GB",
+          "maxFrequencyMHz": 1700,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1700,1700",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1060-6gb-to-gtx-1050-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1050 Ti",
+          "maxFrequencyMHz": 1620,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1620,1620",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1060-6gb-to-gtx-1050",
+          "label": "Mimic NVIDIA GeForce GTX 1050",
+          "maxFrequencyMHz": 1493,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1493,1493",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1650",
+      "label": "NVIDIA GeForce GTX 1650",
+      "matchTokens": [
+        "gtx 1650",
+        "geforce gtx 1650",
+        "gtx 1650"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1650-to-gtx-1060-6gb",
+          "label": "Mimic NVIDIA GeForce GTX 1060 6GB",
+          "maxFrequencyMHz": 1771,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1771,1771",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1650-to-gtx-1060-3gb",
+          "label": "Mimic NVIDIA GeForce GTX 1060 3GB",
+          "maxFrequencyMHz": 1700,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1700,1700",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1650-to-gtx-1050-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1050 Ti",
+          "maxFrequencyMHz": 1620,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1620,1620",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1650-super",
+      "label": "NVIDIA GeForce GTX 1650 Super",
+      "matchTokens": [
+        "gtx 1650 super",
+        "geforce gtx 1650 super",
+        "gtx 1650 super"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1650-super-to-gtx-1650",
+          "label": "Mimic NVIDIA GeForce GTX 1650",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1650-super-to-gtx-1060-6gb",
+          "label": "Mimic NVIDIA GeForce GTX 1060 6GB",
+          "maxFrequencyMHz": 1771,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1771,1771",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1650-super-to-gtx-1060-3gb",
+          "label": "Mimic NVIDIA GeForce GTX 1060 3GB",
+          "maxFrequencyMHz": 1700,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1700,1700",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1660",
+      "label": "NVIDIA GeForce GTX 1660",
+      "matchTokens": [
+        "gtx 1660",
+        "geforce gtx 1660",
+        "gtx 1660"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1660-to-gtx-1650-super",
+          "label": "Mimic NVIDIA GeForce GTX 1650 Super",
+          "maxFrequencyMHz": 1950,
+          "powerLimitWatts": 100,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1950,1950",
+            "-pl",
+            "100"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1660-to-gtx-1650",
+          "label": "Mimic NVIDIA GeForce GTX 1650",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1660-to-gtx-1060-6gb",
+          "label": "Mimic NVIDIA GeForce GTX 1060 6GB",
+          "maxFrequencyMHz": 1771,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1771,1771",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1660-super",
+      "label": "NVIDIA GeForce GTX 1660 Super",
+      "matchTokens": [
+        "gtx 1660 super",
+        "geforce gtx 1660 super",
+        "gtx 1660 super"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1660-super-to-gtx-1660",
+          "label": "Mimic NVIDIA GeForce GTX 1660",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1660-super-to-gtx-1650-super",
+          "label": "Mimic NVIDIA GeForce GTX 1650 Super",
+          "maxFrequencyMHz": 1950,
+          "powerLimitWatts": 100,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1950,1950",
+            "-pl",
+            "100"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1660-super-to-gtx-1650",
+          "label": "Mimic NVIDIA GeForce GTX 1650",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 75,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "75"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1660-ti",
+      "label": "NVIDIA GeForce GTX 1660 Ti",
+      "matchTokens": [
+        "gtx 1660 ti",
+        "geforce gtx 1660 ti",
+        "gtx 1660 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1660-ti-to-gtx-1660-super",
+          "label": "Mimic NVIDIA GeForce GTX 1660 Super",
+          "maxFrequencyMHz": 1935,
+          "powerLimitWatts": 125,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1935,1935",
+            "-pl",
+            "125"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1660-ti-to-gtx-1660",
+          "label": "Mimic NVIDIA GeForce GTX 1660",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1660-ti-to-gtx-1650-super",
+          "label": "Mimic NVIDIA GeForce GTX 1650 Super",
+          "maxFrequencyMHz": 1950,
+          "powerLimitWatts": 100,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1950,1950",
+            "-pl",
+            "100"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1070",
+      "label": "NVIDIA GeForce GTX 1070",
+      "matchTokens": [
+        "gtx 1070",
+        "geforce gtx 1070",
+        "gtx 1070"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1070-to-gtx-1660-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1660 Ti",
+          "maxFrequencyMHz": 1900,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1900,1900",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1070-to-gtx-1660-super",
+          "label": "Mimic NVIDIA GeForce GTX 1660 Super",
+          "maxFrequencyMHz": 1935,
+          "powerLimitWatts": 125,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1935,1935",
+            "-pl",
+            "125"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1070-to-gtx-1660",
+          "label": "Mimic NVIDIA GeForce GTX 1660",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1070-ti",
+      "label": "NVIDIA GeForce GTX 1070 Ti",
+      "matchTokens": [
+        "gtx 1070 ti",
+        "geforce gtx 1070 ti",
+        "gtx 1070 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1070-ti-to-gtx-1070",
+          "label": "Mimic NVIDIA GeForce GTX 1070",
+          "maxFrequencyMHz": 1886,
+          "powerLimitWatts": 150,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1886,1886",
+            "-pl",
+            "150"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-gtx-1070-ti-to-gtx-1660-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1660 Ti",
+          "maxFrequencyMHz": 1900,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1900,1900",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-gtx-1070-ti-to-gtx-1660-super",
+          "label": "Mimic NVIDIA GeForce GTX 1660 Super",
+          "maxFrequencyMHz": 1935,
+          "powerLimitWatts": 125,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1935,1935",
+            "-pl",
+            "125"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1080",
+      "label": "NVIDIA GeForce GTX 1080",
+      "matchTokens": [
+        "gtx 1080",
+        "geforce gtx 1080",
+        "gtx 1080"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1080-to-gtx-1070-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1070 Ti",
+          "maxFrequencyMHz": 1900,
+          "powerLimitWatts": 180,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1900,1900",
+            "-pl",
+            "180"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-gtx-1080-to-gtx-1070",
+          "label": "Mimic NVIDIA GeForce GTX 1070",
+          "maxFrequencyMHz": 1886,
+          "powerLimitWatts": 150,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1886,1886",
+            "-pl",
+            "150"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-gtx-1080-to-gtx-1660-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1660 Ti",
+          "maxFrequencyMHz": 1900,
+          "powerLimitWatts": 120,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1900,1900",
+            "-pl",
+            "120"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-gtx-1080-ti",
+      "label": "NVIDIA GeForce GTX 1080 Ti",
+      "matchTokens": [
+        "gtx 1080 ti",
+        "geforce gtx 1080 ti",
+        "gtx 1080 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-gtx-1080-ti-to-gtx-1080",
+          "label": "Mimic NVIDIA GeForce GTX 1080",
+          "maxFrequencyMHz": 2000,
+          "powerLimitWatts": 180,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2000,2000",
+            "-pl",
+            "180"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-gtx-1080-ti-to-gtx-1070-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1070 Ti",
+          "maxFrequencyMHz": 1900,
+          "powerLimitWatts": 180,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1900,1900",
+            "-pl",
+            "180"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-gtx-1080-ti-to-gtx-1070",
+          "label": "Mimic NVIDIA GeForce GTX 1070",
+          "maxFrequencyMHz": 1886,
+          "powerLimitWatts": 150,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1886,1886",
+            "-pl",
+            "150"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-2060",
+      "label": "NVIDIA GeForce RTX 2060",
+      "matchTokens": [
+        "rtx 2060",
+        "geforce rtx 2060",
+        "rtx 2060"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-2060-to-gtx-1080-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1080 Ti",
+          "maxFrequencyMHz": 2100,
+          "powerLimitWatts": 250,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2100,2100",
+            "-pl",
+            "250"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2060-to-gtx-1080",
+          "label": "Mimic NVIDIA GeForce GTX 1080",
+          "maxFrequencyMHz": 2000,
+          "powerLimitWatts": 180,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2000,2000",
+            "-pl",
+            "180"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2060-to-gtx-1070-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1070 Ti",
+          "maxFrequencyMHz": 1900,
+          "powerLimitWatts": 180,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1900,1900",
+            "-pl",
+            "180"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-2060-super",
+      "label": "NVIDIA GeForce RTX 2060 Super",
+      "matchTokens": [
+        "rtx 2060 super",
+        "geforce rtx 2060 super",
+        "rtx 2060 super"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-2060-super-to-rtx-2060",
+          "label": "Mimic NVIDIA GeForce RTX 2060",
+          "maxFrequencyMHz": 1680,
+          "powerLimitWatts": 160,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1680,1680",
+            "-pl",
+            "160"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2060-super-to-gtx-1080-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1080 Ti",
+          "maxFrequencyMHz": 2100,
+          "powerLimitWatts": 250,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2100,2100",
+            "-pl",
+            "250"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2060-super-to-gtx-1080",
+          "label": "Mimic NVIDIA GeForce GTX 1080",
+          "maxFrequencyMHz": 2000,
+          "powerLimitWatts": 180,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2000,2000",
+            "-pl",
+            "180"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-2070",
+      "label": "NVIDIA GeForce RTX 2070",
+      "matchTokens": [
+        "rtx 2070",
+        "geforce rtx 2070",
+        "rtx 2070"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-2070-to-rtx-2060-super",
+          "label": "Mimic NVIDIA GeForce RTX 2060 Super",
+          "maxFrequencyMHz": 1770,
+          "powerLimitWatts": 175,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1770,1770",
+            "-pl",
+            "175"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2070-to-rtx-2060",
+          "label": "Mimic NVIDIA GeForce RTX 2060",
+          "maxFrequencyMHz": 1680,
+          "powerLimitWatts": 160,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1680,1680",
+            "-pl",
+            "160"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2070-to-gtx-1080-ti",
+          "label": "Mimic NVIDIA GeForce GTX 1080 Ti",
+          "maxFrequencyMHz": 2100,
+          "powerLimitWatts": 250,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2100,2100",
+            "-pl",
+            "250"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-2070-super",
+      "label": "NVIDIA GeForce RTX 2070 Super",
+      "matchTokens": [
+        "rtx 2070 super",
+        "geforce rtx 2070 super",
+        "rtx 2070 super"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-2070-super-to-rtx-2070",
+          "label": "Mimic NVIDIA GeForce RTX 2070",
+          "maxFrequencyMHz": 1770,
+          "powerLimitWatts": 185,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1770,1770",
+            "-pl",
+            "185"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2070-super-to-rtx-2060-super",
+          "label": "Mimic NVIDIA GeForce RTX 2060 Super",
+          "maxFrequencyMHz": 1770,
+          "powerLimitWatts": 175,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1770,1770",
+            "-pl",
+            "175"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2070-super-to-rtx-2060",
+          "label": "Mimic NVIDIA GeForce RTX 2060",
+          "maxFrequencyMHz": 1680,
+          "powerLimitWatts": 160,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1680,1680",
+            "-pl",
+            "160"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-2080",
+      "label": "NVIDIA GeForce RTX 2080",
+      "matchTokens": [
+        "rtx 2080",
+        "geforce rtx 2080",
+        "rtx 2080"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-2080-to-rtx-2070-super",
+          "label": "Mimic NVIDIA GeForce RTX 2070 Super",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 215,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "215"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2080-to-rtx-2070",
+          "label": "Mimic NVIDIA GeForce RTX 2070",
+          "maxFrequencyMHz": 1770,
+          "powerLimitWatts": 185,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1770,1770",
+            "-pl",
+            "185"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2080-to-rtx-2060-super",
+          "label": "Mimic NVIDIA GeForce RTX 2060 Super",
+          "maxFrequencyMHz": 1770,
+          "powerLimitWatts": 175,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1770,1770",
+            "-pl",
+            "175"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-2080-super",
+      "label": "NVIDIA GeForce RTX 2080 Super",
+      "matchTokens": [
+        "rtx 2080 super",
+        "geforce rtx 2080 super",
+        "rtx 2080 super"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-2080-super-to-rtx-2080",
+          "label": "Mimic NVIDIA GeForce RTX 2080",
+          "maxFrequencyMHz": 1800,
+          "powerLimitWatts": 215,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1800,1800",
+            "-pl",
+            "215"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2080-super-to-rtx-2070-super",
+          "label": "Mimic NVIDIA GeForce RTX 2070 Super",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 215,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "215"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2080-super-to-rtx-2070",
+          "label": "Mimic NVIDIA GeForce RTX 2070",
+          "maxFrequencyMHz": 1770,
+          "powerLimitWatts": 185,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1770,1770",
+            "-pl",
+            "185"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-2080-ti",
+      "label": "NVIDIA GeForce RTX 2080 Ti",
+      "matchTokens": [
+        "rtx 2080 ti",
+        "geforce rtx 2080 ti",
+        "rtx 2080 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-2080-ti-to-rtx-2080-super",
+          "label": "Mimic NVIDIA GeForce RTX 2080 Super",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 250,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "250"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2080-ti-to-rtx-2080",
+          "label": "Mimic NVIDIA GeForce RTX 2080",
+          "maxFrequencyMHz": 1800,
+          "powerLimitWatts": 215,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1800,1800",
+            "-pl",
+            "215"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-2080-ti-to-rtx-2070-super",
+          "label": "Mimic NVIDIA GeForce RTX 2070 Super",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 215,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "215"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3050",
+      "label": "NVIDIA GeForce RTX 3050",
+      "matchTokens": [
+        "rtx 3050",
+        "geforce rtx 3050",
+        "rtx 3050"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3050-to-rtx-2080-ti",
+          "label": "Mimic NVIDIA GeForce RTX 2080 Ti",
+          "maxFrequencyMHz": 1755,
+          "powerLimitWatts": 260,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1755,1755",
+            "-pl",
+            "260"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3050-to-rtx-2080-super",
+          "label": "Mimic NVIDIA GeForce RTX 2080 Super",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 250,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "250"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3050-to-rtx-2080",
+          "label": "Mimic NVIDIA GeForce RTX 2080",
+          "maxFrequencyMHz": 1800,
+          "powerLimitWatts": 215,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1800,1800",
+            "-pl",
+            "215"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3060",
+      "label": "NVIDIA GeForce RTX 3060",
+      "matchTokens": [
+        "rtx 3060",
+        "geforce rtx 3060",
+        "rtx 3060"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3060-to-rtx-3050",
+          "label": "Mimic NVIDIA GeForce RTX 3050",
+          "maxFrequencyMHz": 1777,
+          "powerLimitWatts": 130,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1777,1777",
+            "-pl",
+            "130"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-rtx-3060-to-rtx-2080-ti",
+          "label": "Mimic NVIDIA GeForce RTX 2080 Ti",
+          "maxFrequencyMHz": 1755,
+          "powerLimitWatts": 260,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1755,1755",
+            "-pl",
+            "260"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3060-to-rtx-2080-super",
+          "label": "Mimic NVIDIA GeForce RTX 2080 Super",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 250,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "250"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3060-ti",
+      "label": "NVIDIA GeForce RTX 3060 Ti",
+      "matchTokens": [
+        "rtx 3060 ti",
+        "geforce rtx 3060 ti",
+        "rtx 3060 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3060-ti-to-rtx-3060",
+          "label": "Mimic NVIDIA GeForce RTX 3060",
+          "maxFrequencyMHz": 1780,
+          "powerLimitWatts": 170,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1780,1780",
+            "-pl",
+            "170"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3060-ti-to-rtx-3050",
+          "label": "Mimic NVIDIA GeForce RTX 3050",
+          "maxFrequencyMHz": 1777,
+          "powerLimitWatts": 130,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1777,1777",
+            "-pl",
+            "130"
+          ],
+          "requiresConfirmation": true
+        },
+        {
+          "id": "nvidia-rtx-3060-ti-to-rtx-2080-ti",
+          "label": "Mimic NVIDIA GeForce RTX 2080 Ti",
+          "maxFrequencyMHz": 1755,
+          "powerLimitWatts": 260,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1755,1755",
+            "-pl",
+            "260"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3070",
+      "label": "NVIDIA GeForce RTX 3070",
+      "matchTokens": [
+        "rtx 3070",
+        "geforce rtx 3070",
+        "rtx 3070"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3070-to-rtx-3060-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3060 Ti",
+          "maxFrequencyMHz": 1800,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1800,1800",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3070-to-rtx-3060",
+          "label": "Mimic NVIDIA GeForce RTX 3060",
+          "maxFrequencyMHz": 1780,
+          "powerLimitWatts": 170,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1780,1780",
+            "-pl",
+            "170"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3070-to-rtx-3050",
+          "label": "Mimic NVIDIA GeForce RTX 3050",
+          "maxFrequencyMHz": 1777,
+          "powerLimitWatts": 130,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1777,1777",
+            "-pl",
+            "130"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3070-ti",
+      "label": "NVIDIA GeForce RTX 3070 Ti",
+      "matchTokens": [
+        "rtx 3070 ti",
+        "geforce rtx 3070 ti",
+        "rtx 3070 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3070-ti-to-rtx-3070",
+          "label": "Mimic NVIDIA GeForce RTX 3070",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 220,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "220"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3070-ti-to-rtx-3060-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3060 Ti",
+          "maxFrequencyMHz": 1800,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1800,1800",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3070-ti-to-rtx-3060",
+          "label": "Mimic NVIDIA GeForce RTX 3060",
+          "maxFrequencyMHz": 1780,
+          "powerLimitWatts": 170,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1780,1780",
+            "-pl",
+            "170"
+          ],
+          "requiresConfirmation": true
         }
       ]
     },
     {
       "id": "nvidia-rtx-3080",
       "label": "NVIDIA GeForce RTX 3080",
-      "matchTokens": ["rtx 3080", "3080"],
+      "matchTokens": [
+        "rtx 3080",
+        "geforce rtx 3080",
+        "rtx 3080"
+      ],
       "targets": [
         {
-          "id": "nvidia-rtx-3060ti",
-          "label": "Mimic RTX 3060 Ti",
-          "maxFrequencyMHz": 1665,
+          "id": "nvidia-rtx-3080-to-rtx-3070-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3070 Ti",
+          "maxFrequencyMHz": 1890,
+          "powerLimitWatts": 290,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1890,1890",
+            "-pl",
+            "290"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3080-to-rtx-3070",
+          "label": "Mimic NVIDIA GeForce RTX 3070",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 220,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "220"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3080-to-rtx-3060-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3060 Ti",
+          "maxFrequencyMHz": 1800,
           "powerLimitWatts": 200,
-          "nvidiaSmiArgs": ["-lgc", "1100,1100", "-pl", "200"]
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1800,1800",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3080-ti",
+      "label": "NVIDIA GeForce RTX 3080 Ti",
+      "matchTokens": [
+        "rtx 3080 ti",
+        "geforce rtx 3080 ti",
+        "rtx 3080 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3080-ti-to-rtx-3080",
+          "label": "Mimic NVIDIA GeForce RTX 3080",
+          "maxFrequencyMHz": 1710,
+          "powerLimitWatts": 320,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1710,1710",
+            "-pl",
+            "320"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3080-ti-to-rtx-3070-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3070 Ti",
+          "maxFrequencyMHz": 1890,
+          "powerLimitWatts": 290,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1890,1890",
+            "-pl",
+            "290"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3080-ti-to-rtx-3070",
+          "label": "Mimic NVIDIA GeForce RTX 3070",
+          "maxFrequencyMHz": 1815,
+          "powerLimitWatts": 220,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1815,1815",
+            "-pl",
+            "220"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3090",
+      "label": "NVIDIA GeForce RTX 3090",
+      "matchTokens": [
+        "rtx 3090",
+        "geforce rtx 3090",
+        "rtx 3090"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3090-to-rtx-3080-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3080 Ti",
+          "maxFrequencyMHz": 1710,
+          "powerLimitWatts": 350,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1710,1710",
+            "-pl",
+            "350"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3090-to-rtx-3080",
+          "label": "Mimic NVIDIA GeForce RTX 3080",
+          "maxFrequencyMHz": 1710,
+          "powerLimitWatts": 320,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1710,1710",
+            "-pl",
+            "320"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3090-to-rtx-3070-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3070 Ti",
+          "maxFrequencyMHz": 1890,
+          "powerLimitWatts": 290,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1890,1890",
+            "-pl",
+            "290"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3090-ti",
+      "label": "NVIDIA GeForce RTX 3090 Ti",
+      "matchTokens": [
+        "rtx 3090 ti",
+        "geforce rtx 3090 ti",
+        "rtx 3090 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3090-ti-to-rtx-3090",
+          "label": "Mimic NVIDIA GeForce RTX 3090",
+          "maxFrequencyMHz": 1700,
+          "powerLimitWatts": 350,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1700,1700",
+            "-pl",
+            "350"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3090-ti-to-rtx-3080-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3080 Ti",
+          "maxFrequencyMHz": 1710,
+          "powerLimitWatts": 350,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1710,1710",
+            "-pl",
+            "350"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-3090-ti-to-rtx-3080",
+          "label": "Mimic NVIDIA GeForce RTX 3080",
+          "maxFrequencyMHz": 1710,
+          "powerLimitWatts": 320,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1710,1710",
+            "-pl",
+            "320"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-4060",
+      "label": "NVIDIA GeForce RTX 4060",
+      "matchTokens": [
+        "rtx 4060",
+        "geforce rtx 4060",
+        "rtx 4060"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-4060-to-rtx-3090-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3090 Ti",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 450,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "450"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4060-to-rtx-3090",
+          "label": "Mimic NVIDIA GeForce RTX 3090",
+          "maxFrequencyMHz": 1700,
+          "powerLimitWatts": 350,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1700,1700",
+            "-pl",
+            "350"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4060-to-rtx-3080-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3080 Ti",
+          "maxFrequencyMHz": 1710,
+          "powerLimitWatts": 350,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1710,1710",
+            "-pl",
+            "350"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-4060-ti",
+      "label": "NVIDIA GeForce RTX 4060 Ti",
+      "matchTokens": [
+        "rtx 4060 ti",
+        "geforce rtx 4060 ti",
+        "rtx 4060 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-4060-ti-to-rtx-4060",
+          "label": "Mimic NVIDIA GeForce RTX 4060",
+          "maxFrequencyMHz": 2460,
+          "powerLimitWatts": 160,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2460,2460",
+            "-pl",
+            "160"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4060-ti-to-rtx-3090-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3090 Ti",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 450,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "450"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4060-ti-to-rtx-3090",
+          "label": "Mimic NVIDIA GeForce RTX 3090",
+          "maxFrequencyMHz": 1700,
+          "powerLimitWatts": 350,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1700,1700",
+            "-pl",
+            "350"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-4070",
+      "label": "NVIDIA GeForce RTX 4070",
+      "matchTokens": [
+        "rtx 4070",
+        "geforce rtx 4070",
+        "rtx 4070"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-4070-to-rtx-4060-ti",
+          "label": "Mimic NVIDIA GeForce RTX 4060 Ti",
+          "maxFrequencyMHz": 2535,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2535,2535",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4070-to-rtx-4060",
+          "label": "Mimic NVIDIA GeForce RTX 4060",
+          "maxFrequencyMHz": 2460,
+          "powerLimitWatts": 160,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2460,2460",
+            "-pl",
+            "160"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4070-to-rtx-3090-ti",
+          "label": "Mimic NVIDIA GeForce RTX 3090 Ti",
+          "maxFrequencyMHz": 1860,
+          "powerLimitWatts": 450,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "1860,1860",
+            "-pl",
+            "450"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-4070-ti",
+      "label": "NVIDIA GeForce RTX 4070 Ti",
+      "matchTokens": [
+        "rtx 4070 ti",
+        "geforce rtx 4070 ti",
+        "rtx 4070 ti"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-4070-ti-to-rtx-4070",
+          "label": "Mimic NVIDIA GeForce RTX 4070",
+          "maxFrequencyMHz": 2475,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2475,2475",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4070-ti-to-rtx-4060-ti",
+          "label": "Mimic NVIDIA GeForce RTX 4060 Ti",
+          "maxFrequencyMHz": 2535,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2535,2535",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4070-ti-to-rtx-4060",
+          "label": "Mimic NVIDIA GeForce RTX 4060",
+          "maxFrequencyMHz": 2460,
+          "powerLimitWatts": 160,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2460,2460",
+            "-pl",
+            "160"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-4080",
+      "label": "NVIDIA GeForce RTX 4080",
+      "matchTokens": [
+        "rtx 4080",
+        "geforce rtx 4080",
+        "rtx 4080"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-4080-to-rtx-4070-ti",
+          "label": "Mimic NVIDIA GeForce RTX 4070 Ti",
+          "maxFrequencyMHz": 2610,
+          "powerLimitWatts": 285,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2610,2610",
+            "-pl",
+            "285"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4080-to-rtx-4070",
+          "label": "Mimic NVIDIA GeForce RTX 4070",
+          "maxFrequencyMHz": 2475,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2475,2475",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4080-to-rtx-4060-ti",
+          "label": "Mimic NVIDIA GeForce RTX 4060 Ti",
+          "maxFrequencyMHz": 2535,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2535,2535",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": true
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-4090",
+      "label": "NVIDIA GeForce RTX 4090",
+      "matchTokens": [
+        "rtx 4090",
+        "geforce rtx 4090",
+        "rtx 4090"
+      ],
+      "targets": [
+        {
+          "id": "nvidia-rtx-4090-to-rtx-4080",
+          "label": "Mimic NVIDIA GeForce RTX 4080",
+          "maxFrequencyMHz": 2505,
+          "powerLimitWatts": 320,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2505,2505",
+            "-pl",
+            "320"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4090-to-rtx-4070-ti",
+          "label": "Mimic NVIDIA GeForce RTX 4070 Ti",
+          "maxFrequencyMHz": 2610,
+          "powerLimitWatts": 285,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2610,2610",
+            "-pl",
+            "285"
+          ],
+          "requiresConfirmation": false
+        },
+        {
+          "id": "nvidia-rtx-4090-to-rtx-4070",
+          "label": "Mimic NVIDIA GeForce RTX 4070",
+          "maxFrequencyMHz": 2475,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": [
+            "-lgc",
+            "2475,2475",
+            "-pl",
+            "200"
+          ],
+          "requiresConfirmation": true
         }
       ]
     }

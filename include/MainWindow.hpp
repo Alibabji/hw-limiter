@@ -29,6 +29,7 @@ private:
     void UpdateSnapshotLabel();
     void UpdateStatus(const QString& text);
     void UpdateButtonStates();
+    bool ConfirmHighImpact(const QString& targetLabel) const;
     std::filesystem::path ResolveProfilesPath() const;
 
     AppState state_;
@@ -39,4 +40,3 @@ private:
     QPushButton* applyGpuButton_ = nullptr;
     QPushButton* restoreButton_ = nullptr;
 };
-

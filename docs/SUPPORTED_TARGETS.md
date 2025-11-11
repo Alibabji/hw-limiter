@@ -1,19 +1,19 @@
 # Supported Targets
 
-This repository ships with a conservative reference set of downgrade profiles. Extend `resources/profiles.json` to broaden coverage, but keep the matrix below up to date so contributors know which combinations are intentionally supported and tested.
+The shipping `resources/profiles.json` (generated via `scripts/generate_profiles.py`) covers **every mainstream Intel Core / AMD Ryzen CPU released since 2016** and **every NVIDIA GeForce GTX 10/16 and RTX 20/30/40 SKU**. Each supported host exposes up to three downgrade tiers that walk backwards through earlier generations while staying within vendor tooling limits.
 
-## CPUs
-- **Intel Core i7-13700K** -> mimic:
-  - **Core i7-10700** - Caps boost to 4.7 GHz, limits the power plan to 75% max processor state, and keeps 8C/16T active.
-  - **Core i7-6700** - Reduces boost to 4.0 GHz, 60% processor state, and limits surfaces to 4C/8T for legacy parity.
-- **AMD Ryzen 9 7950X** -> mimic:
-  - **Ryzen 7 5800X** - Restricts boost to ~4.5 GHz and sets the processor state to 70% to stay within Zen 3 envelopes.
+## CPU Coverage
+| Vendor | Host Generations | Downgrade Options |
+| --- | --- | --- |
+| Intel Core i3/i5/i7/i9 | 6th through 14th Gen | Mimic any of the previous three generations within the same Core class (e.g., a 14th Gen i7 can throttle to 13th, 12th, and 11th Gen levels). Frequencies and processor-state caps are pre-tuned per generation. |
+| AMD Ryzen 3/5/7/9 | 1000, 2000, 3000, 4000, 5000, 7000, 8000 series | Step down through older Zen generations (up to three tiers). Each target adjusts boost ceilings and processor-state percentages accordingly. |
 
-## GPUs
-- **NVIDIA GeForce RTX 4090** -> mimic:
-  - **RTX 3080** - Uses `nvidia-smi -lgc 1400,1400 -pl 320` (1710 MHz cap, 320 W power limit).
-  - **RTX 3070** - Uses `nvidia-smi -lgc 1200,1200 -pl 240` (1725 MHz cap, 240 W power limit).
-- **NVIDIA GeForce RTX 3080** -> mimic:
-  - **RTX 3060 Ti** - Uses `nvidia-smi -lgc 1100,1100 -pl 200` (1665 MHz cap, 200 W power limit).
+CPU presets warn the user whenever the requested cap drops below ~40% max processor state or skips three generations.
 
-> **Note:** GPU throttling currently relies on `nvidia-smi` and therefore requires NVIDIA drivers. Adding AMD/Intel options involves wiring in ADLX, ROCm, or Arc Control equivalents.
+## GPU Coverage
+| Family | Included SKUs | Downgrade Options |
+| --- | --- | --- |
+| GeForce GTX | GTX 1050 / 1050 Ti / 1060 (3 & 6 GB) / 1070 / 1070 Ti / 1080 / 1080 Ti / 1650 / 1650 Super / 1660 / 1660 Super / 1660 Ti | Each card can mimic any earlier GTX SKU via `nvidia-smi -lgc` (clock caps) and `-pl` (power limits) tuned to that model’s reference specs. |
+| GeForce RTX | RTX 2060 / 2060 Super / 2070 / 2070 Super / 2080 / 2080 Super / 2080 Ti / 3050 / 3060 / 3060 Ti / 3070 / 3070 Ti / 3080 / 3080 Ti / 3090 / 3090 Ti / 4060 / 4060 Ti / 4070 / 4070 Ti / 4080 / 4090 | Tiers walk back through earlier RTX generations (up to three steps). Aggressive targets (e.g., 4090 -> 2070) trigger an explicit warning before issuing the `nvidia-smi` commands. |
+
+> **Reminder:** Throttling requires NVIDIA drivers with `nvidia-smi` on `PATH`. Adding AMD or Intel GPU coverage will require wiring in their vendor CLIs.

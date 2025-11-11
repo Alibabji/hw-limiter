@@ -59,6 +59,7 @@ CpuProfile ProfileLoader::ParseCpuProfile(const Value& value) const {
             target.maxThreads = static_cast<int>(entry["maxThreads"].GetNumber(0));
             target.maxPercent = static_cast<int>(entry["maxPercent"].GetNumber(100));
             target.extraCommands = ParseStringArray(entry["extraCommands"]);
+            target.requiresConfirmation = entry["requiresConfirmation"].GetBool(false);
             profile.targets.push_back(std::move(target));
         }
     }
@@ -80,6 +81,7 @@ GpuProfile ProfileLoader::ParseGpuProfile(const Value& value) const {
             target.maxFrequencyMHz = static_cast<int>(entry["maxFrequencyMHz"].GetNumber(0));
             target.powerLimitWatts = static_cast<int>(entry["powerLimitWatts"].GetNumber(0));
             target.nvidiaSmiArgs = ParseStringArray(entry["nvidiaSmiArgs"]);
+            target.requiresConfirmation = entry["requiresConfirmation"].GetBool(false);
             profile.targets.push_back(std::move(target));
         }
     }

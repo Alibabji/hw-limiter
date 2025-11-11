@@ -16,6 +16,7 @@ struct CpuThrottleTarget {
     int maxThreads = 0;
     int maxPercent = 100;
     std::vector<std::string> extraCommands;  // optional shell commands
+    bool requiresConfirmation = false;
 };
 
 struct CpuProfile {
@@ -31,6 +32,7 @@ struct GpuThrottleTarget {
     int maxFrequencyMHz = 0;
     int powerLimitWatts = 0;
     std::vector<std::string> nvidiaSmiArgs;
+    bool requiresConfirmation = false;
 };
 
 struct GpuProfile {
