@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/HardwareLimiter.dir/src/main.cpp.o CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o -o HardwareLimiter

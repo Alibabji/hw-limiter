@@ -1,0 +1,4 @@
+/Users/nickjeong/projects/hw-limiter/build/CMakeFiles/HardwareLimiter.dir
+/Users/nickjeong/projects/hw-limiter/build/CMakeFiles/CopyProfiles.dir
+/Users/nickjeong/projects/hw-limiter/build/CMakeFiles/edit_cache.dir
+/Users/nickjeong/projects/hw-limiter/build/CMakeFiles/rebuild_cache.dir
