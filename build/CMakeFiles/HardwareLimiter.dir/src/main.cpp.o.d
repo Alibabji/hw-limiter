@@ -1189,4 +1189,5 @@ CMakeFiles/HardwareLimiter.dir/src/main.cpp.o: \
   /Users/nickjeong/projects/hw-limiter/include/ProfileLoader.hpp \
   /Users/nickjeong/projects/hw-limiter/include/SimpleJson.hpp \
   /Users/nickjeong/projects/hw-limiter/include/ProfileEngine.hpp \
-  /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp
+  /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp \
+  /Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp

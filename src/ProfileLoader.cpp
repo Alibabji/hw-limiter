@@ -47,6 +47,7 @@ CpuProfile ProfileLoader::ParseCpuProfile(const Value& value) const {
     profile.id = value["id"].GetString();
     profile.label = value["label"].GetString();
     profile.matchTokens = ParseStringArray(value["matchTokens"]);
+    profile.nominalFrequencyMHz = static_cast<int>(value["nominalFrequencyMHz"].GetNumber(0));
 
     const Value& targets = value["targets"];
     if (targets.IsArray()) {
@@ -71,6 +72,8 @@ GpuProfile ProfileLoader::ParseGpuProfile(const Value& value) const {
     profile.id = value["id"].GetString();
     profile.label = value["label"].GetString();
     profile.matchTokens = ParseStringArray(value["matchTokens"]);
+    profile.nominalFrequencyMHz = static_cast<int>(value["nominalFrequencyMHz"].GetNumber(0));
+    profile.nominalPowerWatts = static_cast<int>(value["nominalPowerWatts"].GetNumber(0));
 
     const Value& targets = value["targets"];
     if (targets.IsArray()) {

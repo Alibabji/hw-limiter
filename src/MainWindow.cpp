@@ -2,6 +2,7 @@
 
 #include <QApplication>
 #include <QCoreApplication>
+#include <QGridLayout>
 #include <QGroupBox>
 #include <QHBoxLayout>
 #include <QLabel>
@@ -13,8 +14,10 @@
 #include <QStringList>
 #include <QVBoxLayout>
 
+#include <algorithm>
 #include <filesystem>
 
+#include "BenchmarkRunner.hpp"
 #include "HardwareInfo.hpp"
 #include "ProfileEngine.hpp"
 #include "ProfileLoader.hpp"
@@ -80,6 +83,41 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     restoreRow->addWidget(restoreButton_);
     mainLayout->addLayout(restoreRow);
 
+    auto* benchmarkBox = new QGroupBox(QStringLiteral("Benchmark (Short Synthetic Test)"), this);
+    auto* benchmarkLayout = new QVBoxLayout;
+
+    auto* benchmarkButtons = new QHBoxLayout;
+    runBaselineButton_ = new QPushButton(QStringLiteral("Run Baseline Benchmark"), this);
+    runCurrentButton_ = new QPushButton(QStringLiteral("Run Current Benchmark"), this);
+    benchmarkButtons->addWidget(runBaselineButton_);
+    benchmarkButtons->addWidget(runCurrentButton_);
+    benchmarkLayout->addLayout(benchmarkButtons);
+
+    auto* grid = new QGridLayout;
+    grid->addWidget(new QLabel(QStringLiteral("CPU Baseline:"), this), 0, 0);
+    cpuBaselineLabel_ = new QLabel(QStringLiteral("N/A"), this);
+    grid->addWidget(cpuBaselineLabel_, 0, 1);
+    grid->addWidget(new QLabel(QStringLiteral("CPU Current:"), this), 1, 0);
+    cpuCurrentLabel_ = new QLabel(QStringLiteral("N/A"), this);
+    grid->addWidget(cpuCurrentLabel_, 1, 1);
+    grid->addWidget(new QLabel(QStringLiteral("CPU Expected:"), this), 2, 0);
+    cpuExpectedLabel_ = new QLabel(QStringLiteral("N/A"), this);
+    grid->addWidget(cpuExpectedLabel_, 2, 1);
+
+    grid->addWidget(new QLabel(QStringLiteral("GPU Baseline:"), this), 0, 2);
+    gpuBaselineLabel_ = new QLabel(QStringLiteral("N/A"), this);
+    grid->addWidget(gpuBaselineLabel_, 0, 3);
+    grid->addWidget(new QLabel(QStringLiteral("GPU Current:"), this), 1, 2);
+    gpuCurrentLabel_ = new QLabel(QStringLiteral("N/A"), this);
+    grid->addWidget(gpuCurrentLabel_, 1, 3);
+    grid->addWidget(new QLabel(QStringLiteral("GPU Expected:"), this), 2, 2);
+    gpuExpectedLabel_ = new QLabel(QStringLiteral("N/A"), this);
+    grid->addWidget(gpuExpectedLabel_, 2, 3);
+
+    benchmarkLayout->addLayout(grid);
+    benchmarkBox->setLayout(benchmarkLayout);
+    mainLayout->addWidget(benchmarkBox);
+
     central->setLayout(mainLayout);
     setCentralWidget(central);
     statusBar()->showMessage(QStringLiteral("Initializing..."));
@@ -89,6 +127,8 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     connect(applyCpuButton_, &QPushButton::clicked, this, &MainWindow::ApplyCpuTarget);
     connect(applyGpuButton_, &QPushButton::clicked, this, &MainWindow::ApplyGpuTarget);
     connect(restoreButton_, &QPushButton::clicked, this, &MainWindow::RestoreDefaults);
+    connect(runBaselineButton_, &QPushButton::clicked, this, &MainWindow::RunBaselineBenchmark);
+    connect(runCurrentButton_, &QPushButton::clicked, this, &MainWindow::RunCurrentBenchmark);
 
     InitializeState();
 }
@@ -116,11 +156,15 @@ void MainWindow::InitializeState() {
     state_.engine.Refresh(state_.snapshot, state_.profiles);
     state_.cpuOptions = state_.engine.CpuOptions();
     state_.gpuOptions = state_.engine.GpuOptions();
+    state_.cpuNominalFrequencyMHz = state_.engine.CpuNominalFrequencyMHz();
+    state_.gpuNominalClockMHz = state_.engine.GpuNominalFrequencyMHz();
+    state_.gpuNominalPowerWatts = state_.engine.GpuNominalPowerWatts();
     state_.initialized = true;
 
     PopulateLists();
     UpdateSnapshotLabel();
     UpdateButtonStates();
+    UpdateBenchmarkLabels();
     UpdateStatus(QStringLiteral("Ready"));
 }
 
@@ -155,6 +199,7 @@ void MainWindow::HandleCpuSelection(int row) {
         state_.selectedCpu.reset();
     }
     UpdateButtonStates();
+    UpdateBenchmarkLabels();
 }
 
 void MainWindow::HandleGpuSelection(int row) {
@@ -164,6 +209,7 @@ void MainWindow::HandleGpuSelection(int row) {
         state_.selectedGpu.reset();
     }
     UpdateButtonStates();
+    UpdateBenchmarkLabels();
 }
 
 void MainWindow::ApplyCpuTarget() {
@@ -217,6 +263,114 @@ void MainWindow::UpdateButtonStates() {
     applyCpuButton_->setEnabled(hasCpu);
     applyGpuButton_->setEnabled(hasGpu);
     restoreButton_->setEnabled(state_.initialized);
+}
+
+void MainWindow::RunBaselineBenchmark() {
+    RunBenchmark(true);
+}
+
+void MainWindow::RunCurrentBenchmark() {
+    RunBenchmark(false);
+}
+
+void MainWindow::RunBenchmark(bool baseline) {
+    BenchmarkRunner runner;
+    QApplication::setOverrideCursor(Qt::BusyCursor);
+    UpdateStatus(baseline ? QStringLiteral("Running baseline benchmark...")
+                          : QStringLiteral("Running current benchmark..."));
+    const auto report = runner.Run(state_.snapshot);
+    QApplication::restoreOverrideCursor();
+
+    if (baseline) {
+        state_.benchmark.baselineCpu = report.cpu;
+        state_.benchmark.baselineGpu = report.gpu;
+    } else {
+        state_.benchmark.currentCpu = report.cpu;
+        state_.benchmark.currentGpu = report.gpu;
+    }
+    UpdateBenchmarkLabels();
+    UpdateStatus(QStringLiteral("Benchmark complete"));
+}
+
+QString MainWindow::FormatScoreLabel(const std::optional<BenchmarkResultData>& data) const {
+    if (!data) {
+        return QStringLiteral("N/A");
+    }
+    return QString::number(data->score, 'f', 2) + QStringLiteral(" ") +
+           QString::fromStdString(data->unit);
+}
+
+void MainWindow::UpdateBenchmarkLabels() {
+    cpuBaselineLabel_->setText(FormatScoreLabel(state_.benchmark.baselineCpu));
+    cpuBaselineLabel_->setToolTip(state_.benchmark.baselineCpu
+                                      ? QString::fromStdString(state_.benchmark.baselineCpu->details)
+                                      : QString());
+    cpuCurrentLabel_->setText(FormatScoreLabel(state_.benchmark.currentCpu));
+    cpuCurrentLabel_->setToolTip(state_.benchmark.currentCpu
+                                     ? QString::fromStdString(state_.benchmark.currentCpu->details)
+                                     : QString());
+
+    auto cpuExpected = ComputeExpectedCpuScore();
+    if (cpuExpected && state_.benchmark.baselineCpu) {
+        cpuExpectedLabel_->setText(QString::number(*cpuExpected, 'f', 2) + QStringLiteral(" ") +
+                                   QString::fromStdString(state_.benchmark.baselineCpu->unit));
+    } else {
+        cpuExpectedLabel_->setText(QStringLiteral("N/A"));
+    }
+
+    gpuBaselineLabel_->setText(FormatScoreLabel(state_.benchmark.baselineGpu));
+    gpuBaselineLabel_->setToolTip(state_.benchmark.baselineGpu
+                                      ? QString::fromStdString(state_.benchmark.baselineGpu->details)
+                                      : QString());
+    gpuCurrentLabel_->setText(FormatScoreLabel(state_.benchmark.currentGpu));
+    gpuCurrentLabel_->setToolTip(state_.benchmark.currentGpu
+                                     ? QString::fromStdString(state_.benchmark.currentGpu->details)
+                                     : QString());
+
+    auto gpuExpected = ComputeExpectedGpuScore();
+    if (gpuExpected && state_.benchmark.baselineGpu) {
+        gpuExpectedLabel_->setText(QString::number(*gpuExpected, 'f', 2) + QStringLiteral(" ") +
+                                   QString::fromStdString(state_.benchmark.baselineGpu->unit));
+    } else {
+        gpuExpectedLabel_->setText(QStringLiteral("N/A"));
+    }
+}
+
+std::optional<double> MainWindow::ComputeExpectedCpuScore() const {
+    if (!state_.benchmark.baselineCpu || !state_.selectedCpu ||
+        state_.benchmark.baselineCpu->score <= 0.0) {
+        return std::nullopt;
+    }
+    const double base = state_.benchmark.baselineCpu->score;
+    const double percent = state_.selectedCpu->maxPercent > 0
+                               ? static_cast<double>(state_.selectedCpu->maxPercent) / 100.0
+                               : 1.0;
+    double freqFactor = 1.0;
+    if (state_.cpuNominalFrequencyMHz > 0 && state_.selectedCpu->maxFrequencyMHz > 0) {
+        freqFactor = static_cast<double>(state_.selectedCpu->maxFrequencyMHz) /
+                     static_cast<double>(state_.cpuNominalFrequencyMHz);
+    }
+    const double factor = std::clamp(std::min(percent, freqFactor), 0.05, 1.0);
+    return base * factor;
+}
+
+std::optional<double> MainWindow::ComputeExpectedGpuScore() const {
+    if (!state_.benchmark.baselineGpu || !state_.selectedGpu ||
+        state_.benchmark.baselineGpu->score <= 0.0) {
+        return std::nullopt;
+    }
+    double freqFactor = 1.0;
+    if (state_.gpuNominalClockMHz > 0 && state_.selectedGpu->maxFrequencyMHz > 0) {
+        freqFactor = static_cast<double>(state_.selectedGpu->maxFrequencyMHz) /
+                     static_cast<double>(state_.gpuNominalClockMHz);
+    }
+    double powerFactor = 1.0;
+    if (state_.gpuNominalPowerWatts > 0 && state_.selectedGpu->powerLimitWatts > 0) {
+        powerFactor = static_cast<double>(state_.selectedGpu->powerLimitWatts) /
+                      static_cast<double>(state_.gpuNominalPowerWatts);
+    }
+    const double factor = std::clamp(std::min(freqFactor, powerFactor), 0.05, 1.0);
+    return state_.benchmark.baselineGpu->score * factor;
 }
 
 bool MainWindow::ConfirmHighImpact(const QString& targetLabel) const {

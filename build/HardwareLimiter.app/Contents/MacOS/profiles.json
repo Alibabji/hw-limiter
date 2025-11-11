@@ -22,7 +22,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4100
     },
     {
       "id": "intel-i3-gen8",
@@ -58,7 +59,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "intel-i3-gen9",
@@ -106,7 +108,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4500
     },
     {
       "id": "intel-i3-gen10",
@@ -154,7 +157,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "intel-i3-gen11",
@@ -202,7 +206,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4900
     },
     {
       "id": "intel-i3-gen12",
@@ -250,7 +255,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5100
     },
     {
       "id": "intel-i3-gen13",
@@ -298,7 +304,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     },
     {
       "id": "intel-i3-gen14",
@@ -346,7 +353,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5400
     },
     {
       "id": "intel-i5-gen7",
@@ -370,7 +378,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4100
     },
     {
       "id": "intel-i5-gen8",
@@ -406,7 +415,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "intel-i5-gen9",
@@ -454,7 +464,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4500
     },
     {
       "id": "intel-i5-gen10",
@@ -502,7 +513,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "intel-i5-gen11",
@@ -550,7 +562,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4900
     },
     {
       "id": "intel-i5-gen12",
@@ -598,7 +611,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5100
     },
     {
       "id": "intel-i5-gen13",
@@ -646,7 +660,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     },
     {
       "id": "intel-i5-gen14",
@@ -694,7 +709,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5400
     },
     {
       "id": "intel-i7-gen7",
@@ -718,7 +734,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4100
     },
     {
       "id": "intel-i7-gen8",
@@ -754,7 +771,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "intel-i7-gen9",
@@ -802,7 +820,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4500
     },
     {
       "id": "intel-i7-gen10",
@@ -850,7 +869,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "intel-i7-gen11",
@@ -898,7 +918,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4900
     },
     {
       "id": "intel-i7-gen12",
@@ -946,7 +967,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5100
     },
     {
       "id": "intel-i7-gen13",
@@ -994,7 +1016,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     },
     {
       "id": "intel-i7-gen14",
@@ -1042,7 +1065,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5400
     },
     {
       "id": "intel-i9-gen7",
@@ -1066,7 +1090,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4100
     },
     {
       "id": "intel-i9-gen8",
@@ -1102,7 +1127,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "intel-i9-gen9",
@@ -1150,7 +1176,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4500
     },
     {
       "id": "intel-i9-gen10",
@@ -1198,7 +1225,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "intel-i9-gen11",
@@ -1246,7 +1274,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4900
     },
     {
       "id": "intel-i9-gen12",
@@ -1294,7 +1323,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5100
     },
     {
       "id": "intel-i9-gen13",
@@ -1342,7 +1372,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     },
     {
       "id": "intel-i9-gen14",
@@ -1390,7 +1421,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5400
     },
     {
       "id": "amd-ryzen3-2000",
@@ -1413,7 +1445,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4000
     },
     {
       "id": "amd-ryzen3-3000",
@@ -1448,7 +1481,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "amd-ryzen3-4000",
@@ -1495,7 +1529,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4400
     },
     {
       "id": "amd-ryzen3-5000",
@@ -1542,7 +1577,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "amd-ryzen3-7000",
@@ -1589,7 +1625,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5200
     },
     {
       "id": "amd-ryzen3-8000",
@@ -1636,7 +1673,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     },
     {
       "id": "amd-ryzen5-2000",
@@ -1659,7 +1697,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4000
     },
     {
       "id": "amd-ryzen5-3000",
@@ -1694,7 +1733,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "amd-ryzen5-4000",
@@ -1741,7 +1781,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4400
     },
     {
       "id": "amd-ryzen5-5000",
@@ -1788,7 +1829,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "amd-ryzen5-7000",
@@ -1835,7 +1877,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5200
     },
     {
       "id": "amd-ryzen5-8000",
@@ -1882,7 +1925,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     },
     {
       "id": "amd-ryzen7-2000",
@@ -1905,7 +1949,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4000
     },
     {
       "id": "amd-ryzen7-3000",
@@ -1940,7 +1985,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "amd-ryzen7-4000",
@@ -1987,7 +2033,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4400
     },
     {
       "id": "amd-ryzen7-5000",
@@ -2034,7 +2081,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "amd-ryzen7-7000",
@@ -2081,7 +2129,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5200
     },
     {
       "id": "amd-ryzen7-8000",
@@ -2128,7 +2177,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     },
     {
       "id": "amd-ryzen9-2000",
@@ -2151,7 +2201,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4000
     },
     {
       "id": "amd-ryzen9-3000",
@@ -2186,7 +2237,8 @@
           ],
           "requiresConfirmation": false
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4300
     },
     {
       "id": "amd-ryzen9-4000",
@@ -2233,7 +2285,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4400
     },
     {
       "id": "amd-ryzen9-5000",
@@ -2280,7 +2333,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 4700
     },
     {
       "id": "amd-ryzen9-7000",
@@ -2327,7 +2381,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5200
     },
     {
       "id": "amd-ryzen9-8000",
@@ -2374,7 +2429,8 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 5300
     }
   ],
   "gpuProfiles": [
@@ -2383,10 +2439,11 @@
       "label": "NVIDIA GeForce GTX 1050",
       "matchTokens": [
         "gtx 1050",
-        "geforce gtx 1050",
-        "gtx 1050"
+        "geforce gtx 1050"
       ],
-      "targets": []
+      "targets": [],
+      "nominalFrequencyMHz": 1493,
+      "nominalPowerWatts": 75
     },
     {
       "id": "nvidia-gtx-1050-ti",
@@ -2394,7 +2451,7 @@
       "matchTokens": [
         "gtx 1050 ti",
         "geforce gtx 1050 ti",
-        "gtx 1050 ti"
+        "gtx 1050  ti"
       ],
       "targets": [
         {
@@ -2410,15 +2467,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1620,
+      "nominalPowerWatts": 75
     },
     {
       "id": "nvidia-gtx-1060-3gb",
       "label": "NVIDIA GeForce GTX 1060 3GB",
       "matchTokens": [
         "gtx 1060 3gb",
-        "geforce gtx 1060 3gb",
-        "gtx 1060 3gb"
+        "geforce gtx 1060 3gb"
       ],
       "targets": [
         {
@@ -2447,15 +2505,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1700,
+      "nominalPowerWatts": 120
     },
     {
       "id": "nvidia-gtx-1060-6gb",
       "label": "NVIDIA GeForce GTX 1060 6GB",
       "matchTokens": [
         "gtx 1060 6gb",
-        "geforce gtx 1060 6gb",
-        "gtx 1060 6gb"
+        "geforce gtx 1060 6gb"
       ],
       "targets": [
         {
@@ -2497,15 +2556,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1771,
+      "nominalPowerWatts": 120
     },
     {
       "id": "nvidia-gtx-1650",
       "label": "NVIDIA GeForce GTX 1650",
       "matchTokens": [
         "gtx 1650",
-        "geforce gtx 1650",
-        "gtx 1650"
+        "geforce gtx 1650"
       ],
       "targets": [
         {
@@ -2547,7 +2607,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1860,
+      "nominalPowerWatts": 75
     },
     {
       "id": "nvidia-gtx-1650-super",
@@ -2555,7 +2617,7 @@
       "matchTokens": [
         "gtx 1650 super",
         "geforce gtx 1650 super",
-        "gtx 1650 super"
+        "gtx 1650  super"
       ],
       "targets": [
         {
@@ -2597,15 +2659,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1950,
+      "nominalPowerWatts": 100
     },
     {
       "id": "nvidia-gtx-1660",
       "label": "NVIDIA GeForce GTX 1660",
       "matchTokens": [
         "gtx 1660",
-        "geforce gtx 1660",
-        "gtx 1660"
+        "geforce gtx 1660"
       ],
       "targets": [
         {
@@ -2647,7 +2710,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1860,
+      "nominalPowerWatts": 120
     },
     {
       "id": "nvidia-gtx-1660-super",
@@ -2655,7 +2720,7 @@
       "matchTokens": [
         "gtx 1660 super",
         "geforce gtx 1660 super",
-        "gtx 1660 super"
+        "gtx 1660  super"
       ],
       "targets": [
         {
@@ -2697,7 +2762,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1935,
+      "nominalPowerWatts": 125
     },
     {
       "id": "nvidia-gtx-1660-ti",
@@ -2705,7 +2772,7 @@
       "matchTokens": [
         "gtx 1660 ti",
         "geforce gtx 1660 ti",
-        "gtx 1660 ti"
+        "gtx 1660  ti"
       ],
       "targets": [
         {
@@ -2747,15 +2814,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1900,
+      "nominalPowerWatts": 120
     },
     {
       "id": "nvidia-gtx-1070",
       "label": "NVIDIA GeForce GTX 1070",
       "matchTokens": [
         "gtx 1070",
-        "geforce gtx 1070",
-        "gtx 1070"
+        "geforce gtx 1070"
       ],
       "targets": [
         {
@@ -2797,7 +2865,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1886,
+      "nominalPowerWatts": 150
     },
     {
       "id": "nvidia-gtx-1070-ti",
@@ -2805,7 +2875,7 @@
       "matchTokens": [
         "gtx 1070 ti",
         "geforce gtx 1070 ti",
-        "gtx 1070 ti"
+        "gtx 1070  ti"
       ],
       "targets": [
         {
@@ -2847,15 +2917,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1900,
+      "nominalPowerWatts": 180
     },
     {
       "id": "nvidia-gtx-1080",
       "label": "NVIDIA GeForce GTX 1080",
       "matchTokens": [
         "gtx 1080",
-        "geforce gtx 1080",
-        "gtx 1080"
+        "geforce gtx 1080"
       ],
       "targets": [
         {
@@ -2897,7 +2968,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2000,
+      "nominalPowerWatts": 180
     },
     {
       "id": "nvidia-gtx-1080-ti",
@@ -2905,7 +2978,7 @@
       "matchTokens": [
         "gtx 1080 ti",
         "geforce gtx 1080 ti",
-        "gtx 1080 ti"
+        "gtx 1080  ti"
       ],
       "targets": [
         {
@@ -2947,15 +3020,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2100,
+      "nominalPowerWatts": 250
     },
     {
       "id": "nvidia-rtx-2060",
       "label": "NVIDIA GeForce RTX 2060",
       "matchTokens": [
         "rtx 2060",
-        "geforce rtx 2060",
-        "rtx 2060"
+        "geforce rtx 2060"
       ],
       "targets": [
         {
@@ -2997,7 +3071,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1680,
+      "nominalPowerWatts": 160
     },
     {
       "id": "nvidia-rtx-2060-super",
@@ -3005,7 +3081,7 @@
       "matchTokens": [
         "rtx 2060 super",
         "geforce rtx 2060 super",
-        "rtx 2060 super"
+        "rtx 2060  super"
       ],
       "targets": [
         {
@@ -3047,15 +3123,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1770,
+      "nominalPowerWatts": 175
     },
     {
       "id": "nvidia-rtx-2070",
       "label": "NVIDIA GeForce RTX 2070",
       "matchTokens": [
         "rtx 2070",
-        "geforce rtx 2070",
-        "rtx 2070"
+        "geforce rtx 2070"
       ],
       "targets": [
         {
@@ -3097,7 +3174,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1770,
+      "nominalPowerWatts": 185
     },
     {
       "id": "nvidia-rtx-2070-super",
@@ -3105,7 +3184,7 @@
       "matchTokens": [
         "rtx 2070 super",
         "geforce rtx 2070 super",
-        "rtx 2070 super"
+        "rtx 2070  super"
       ],
       "targets": [
         {
@@ -3147,15 +3226,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1815,
+      "nominalPowerWatts": 215
     },
     {
       "id": "nvidia-rtx-2080",
       "label": "NVIDIA GeForce RTX 2080",
       "matchTokens": [
         "rtx 2080",
-        "geforce rtx 2080",
-        "rtx 2080"
+        "geforce rtx 2080"
       ],
       "targets": [
         {
@@ -3197,7 +3277,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1800,
+      "nominalPowerWatts": 215
     },
     {
       "id": "nvidia-rtx-2080-super",
@@ -3205,7 +3287,7 @@
       "matchTokens": [
         "rtx 2080 super",
         "geforce rtx 2080 super",
-        "rtx 2080 super"
+        "rtx 2080  super"
       ],
       "targets": [
         {
@@ -3247,7 +3329,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1815,
+      "nominalPowerWatts": 250
     },
     {
       "id": "nvidia-rtx-2080-ti",
@@ -3255,7 +3339,7 @@
       "matchTokens": [
         "rtx 2080 ti",
         "geforce rtx 2080 ti",
-        "rtx 2080 ti"
+        "rtx 2080  ti"
       ],
       "targets": [
         {
@@ -3297,15 +3381,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1755,
+      "nominalPowerWatts": 260
     },
     {
       "id": "nvidia-rtx-3050",
       "label": "NVIDIA GeForce RTX 3050",
       "matchTokens": [
         "rtx 3050",
-        "geforce rtx 3050",
-        "rtx 3050"
+        "geforce rtx 3050"
       ],
       "targets": [
         {
@@ -3347,15 +3432,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1777,
+      "nominalPowerWatts": 130
     },
     {
       "id": "nvidia-rtx-3060",
       "label": "NVIDIA GeForce RTX 3060",
       "matchTokens": [
         "rtx 3060",
-        "geforce rtx 3060",
-        "rtx 3060"
+        "geforce rtx 3060"
       ],
       "targets": [
         {
@@ -3397,7 +3483,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1780,
+      "nominalPowerWatts": 170
     },
     {
       "id": "nvidia-rtx-3060-ti",
@@ -3405,7 +3493,7 @@
       "matchTokens": [
         "rtx 3060 ti",
         "geforce rtx 3060 ti",
-        "rtx 3060 ti"
+        "rtx 3060  ti"
       ],
       "targets": [
         {
@@ -3447,15 +3535,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1800,
+      "nominalPowerWatts": 200
     },
     {
       "id": "nvidia-rtx-3070",
       "label": "NVIDIA GeForce RTX 3070",
       "matchTokens": [
         "rtx 3070",
-        "geforce rtx 3070",
-        "rtx 3070"
+        "geforce rtx 3070"
       ],
       "targets": [
         {
@@ -3497,7 +3586,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1815,
+      "nominalPowerWatts": 220
     },
     {
       "id": "nvidia-rtx-3070-ti",
@@ -3505,7 +3596,7 @@
       "matchTokens": [
         "rtx 3070 ti",
         "geforce rtx 3070 ti",
-        "rtx 3070 ti"
+        "rtx 3070  ti"
       ],
       "targets": [
         {
@@ -3547,15 +3638,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1890,
+      "nominalPowerWatts": 290
     },
     {
       "id": "nvidia-rtx-3080",
       "label": "NVIDIA GeForce RTX 3080",
       "matchTokens": [
         "rtx 3080",
-        "geforce rtx 3080",
-        "rtx 3080"
+        "geforce rtx 3080"
       ],
       "targets": [
         {
@@ -3597,7 +3689,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1710,
+      "nominalPowerWatts": 320
     },
     {
       "id": "nvidia-rtx-3080-ti",
@@ -3605,7 +3699,7 @@
       "matchTokens": [
         "rtx 3080 ti",
         "geforce rtx 3080 ti",
-        "rtx 3080 ti"
+        "rtx 3080  ti"
       ],
       "targets": [
         {
@@ -3647,15 +3741,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1710,
+      "nominalPowerWatts": 350
     },
     {
       "id": "nvidia-rtx-3090",
       "label": "NVIDIA GeForce RTX 3090",
       "matchTokens": [
         "rtx 3090",
-        "geforce rtx 3090",
-        "rtx 3090"
+        "geforce rtx 3090"
       ],
       "targets": [
         {
@@ -3697,7 +3792,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1700,
+      "nominalPowerWatts": 350
     },
     {
       "id": "nvidia-rtx-3090-ti",
@@ -3705,7 +3802,7 @@
       "matchTokens": [
         "rtx 3090 ti",
         "geforce rtx 3090 ti",
-        "rtx 3090 ti"
+        "rtx 3090  ti"
       ],
       "targets": [
         {
@@ -3747,15 +3844,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 1860,
+      "nominalPowerWatts": 450
     },
     {
       "id": "nvidia-rtx-4060",
       "label": "NVIDIA GeForce RTX 4060",
       "matchTokens": [
         "rtx 4060",
-        "geforce rtx 4060",
-        "rtx 4060"
+        "geforce rtx 4060"
       ],
       "targets": [
         {
@@ -3797,7 +3895,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2460,
+      "nominalPowerWatts": 160
     },
     {
       "id": "nvidia-rtx-4060-ti",
@@ -3805,7 +3905,7 @@
       "matchTokens": [
         "rtx 4060 ti",
         "geforce rtx 4060 ti",
-        "rtx 4060 ti"
+        "rtx 4060  ti"
       ],
       "targets": [
         {
@@ -3847,15 +3947,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2535,
+      "nominalPowerWatts": 200
     },
     {
       "id": "nvidia-rtx-4070",
       "label": "NVIDIA GeForce RTX 4070",
       "matchTokens": [
         "rtx 4070",
-        "geforce rtx 4070",
-        "rtx 4070"
+        "geforce rtx 4070"
       ],
       "targets": [
         {
@@ -3897,7 +3998,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2475,
+      "nominalPowerWatts": 200
     },
     {
       "id": "nvidia-rtx-4070-ti",
@@ -3905,7 +4008,7 @@
       "matchTokens": [
         "rtx 4070 ti",
         "geforce rtx 4070 ti",
-        "rtx 4070 ti"
+        "rtx 4070  ti"
       ],
       "targets": [
         {
@@ -3947,15 +4050,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2610,
+      "nominalPowerWatts": 285
     },
     {
       "id": "nvidia-rtx-4080",
       "label": "NVIDIA GeForce RTX 4080",
       "matchTokens": [
         "rtx 4080",
-        "geforce rtx 4080",
-        "rtx 4080"
+        "geforce rtx 4080"
       ],
       "targets": [
         {
@@ -3997,15 +4101,16 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2505,
+      "nominalPowerWatts": 320
     },
     {
       "id": "nvidia-rtx-4090",
       "label": "NVIDIA GeForce RTX 4090",
       "matchTokens": [
         "rtx 4090",
-        "geforce rtx 4090",
-        "rtx 4090"
+        "geforce rtx 4090"
       ],
       "targets": [
         {
@@ -4047,7 +4152,9 @@
           ],
           "requiresConfirmation": true
         }
-      ]
+      ],
+      "nominalFrequencyMHz": 2520,
+      "nominalPowerWatts": 450
     }
   ]
 }

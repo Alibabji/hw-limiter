@@ -22,6 +22,8 @@ private slots:
     void ApplyCpuTarget();
     void ApplyGpuTarget();
     void RestoreDefaults();
+    void RunBaselineBenchmark();
+    void RunCurrentBenchmark();
 
 private:
     void InitializeState();
@@ -29,6 +31,11 @@ private:
     void UpdateSnapshotLabel();
     void UpdateStatus(const QString& text);
     void UpdateButtonStates();
+    void RunBenchmark(bool baseline);
+    void UpdateBenchmarkLabels();
+    std::optional<double> ComputeExpectedCpuScore() const;
+    std::optional<double> ComputeExpectedGpuScore() const;
+    QString FormatScoreLabel(const std::optional<BenchmarkResultData>& data) const;
     bool ConfirmHighImpact(const QString& targetLabel) const;
     std::filesystem::path ResolveProfilesPath() const;
 
@@ -39,4 +46,12 @@ private:
     QPushButton* applyCpuButton_ = nullptr;
     QPushButton* applyGpuButton_ = nullptr;
     QPushButton* restoreButton_ = nullptr;
+    QPushButton* runBaselineButton_ = nullptr;
+    QPushButton* runCurrentButton_ = nullptr;
+    QLabel* cpuBaselineLabel_ = nullptr;
+    QLabel* cpuCurrentLabel_ = nullptr;
+    QLabel* cpuExpectedLabel_ = nullptr;
+    QLabel* gpuBaselineLabel_ = nullptr;
+    QLabel* gpuCurrentLabel_ = nullptr;
+    QLabel* gpuExpectedLabel_ = nullptr;
 };

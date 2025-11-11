@@ -18,11 +18,17 @@ std::string ToLower(std::string value) {
 void ProfileEngine::Refresh(const HardwareSnapshot& snapshot, const ProfileDatabase& database) {
     cpuOptions_.clear();
     gpuOptions_.clear();
+    cpuNominalFrequencyMHz_ = 0;
+    gpuNominalFrequencyMHz_ = 0;
+    gpuNominalPowerWatts_ = 0;
 
     const std::string cpuNameLower = ToLower(snapshot.cpu.name);
     for (const auto& profile : database.cpuProfiles) {
         if (MatchesTokens(cpuNameLower, profile.matchTokens)) {
             cpuOptions_.insert(cpuOptions_.end(), profile.targets.begin(), profile.targets.end());
+            if (cpuNominalFrequencyMHz_ == 0 && profile.nominalFrequencyMHz > 0) {
+                cpuNominalFrequencyMHz_ = profile.nominalFrequencyMHz;
+            }
         }
     }
 
@@ -33,6 +39,12 @@ void ProfileEngine::Refresh(const HardwareSnapshot& snapshot, const ProfileDatab
         for (const auto& profile : database.gpuProfiles) {
             if (MatchesTokens(gpuLower, profile.matchTokens)) {
                 gpuOptions_.insert(gpuOptions_.end(), profile.targets.begin(), profile.targets.end());
+                if (gpuNominalFrequencyMHz_ == 0 && profile.nominalFrequencyMHz > 0) {
+                    gpuNominalFrequencyMHz_ = profile.nominalFrequencyMHz;
+                }
+                if (gpuNominalPowerWatts_ == 0 && profile.nominalPowerWatts > 0) {
+                    gpuNominalPowerWatts_ = profile.nominalPowerWatts;
+                }
             }
         }
     }

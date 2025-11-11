@@ -933,12 +933,14 @@ HardwareLimiter_autogen/timestamp: \
 	/Users/nickjeong/projects/hw-limiter/build/CMakeFiles/4.1.2/CMakeSystem.cmake \
 	/Users/nickjeong/projects/hw-limiter/build/HardwareLimiter_autogen/moc_predefs.h \
 	/Users/nickjeong/projects/hw-limiter/include/AppState.hpp \
+	/Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp \
 	/Users/nickjeong/projects/hw-limiter/include/HardwareInfo.hpp \
 	/Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp \
 	/Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp \
 	/Users/nickjeong/projects/hw-limiter/include/ProfileEngine.hpp \
 	/Users/nickjeong/projects/hw-limiter/include/ProfileLoader.hpp \
 	/Users/nickjeong/projects/hw-limiter/include/SimpleJson.hpp \
+	/Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp \
 	/Users/nickjeong/projects/hw-limiter/src/HardwareInfo.cpp \
 	/Users/nickjeong/projects/hw-limiter/src/MainWindow.cpp \
 	/Users/nickjeong/projects/hw-limiter/src/PowerThrottler.cpp \

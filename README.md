@@ -34,6 +34,7 @@ Hardware Limiter is a Windows-only Qt application that inventories the local CPU
 - Launch `HardwareLimiter.exe` via **Run as administrator** so `powercfg`/`nvidia-smi` can change system limits.
 - The top banner lists detected CPUs/GPUs and highlights which downgrade tiers are valid.
 - Selecting an aggressive tier triggers a confirmation dialog reminding the user that all responsibility lies with them before any command executes.
+- Use the **Benchmark** panel to capture a baseline score (raw hardware) and a post-limit score; the UI also projects the expected score for the selected target using its clock/power caps.
 - **Restore Defaults** immediately reapplies 100% CPU power and clears GPU clock/power overrides.
 
 ## Supported Hardware Families
@@ -53,5 +54,6 @@ If you need to regenerate or extend the catalog, edit `scripts/generate_profiles
 
 ## Limitations & Next Steps
 - GPU throttling is NVIDIA-only; AMD/Intel GPUs would require integrating ADLX or Arc Control CLIs.
+- GPU benchmarking relies on DirectX 11 compute; if the adapter or driver cannot create a compute device the GPU score will read as N/A.
 - Profiles are unsigned JSON; consider signing or hashing before distributing binaries.
 - Planned enhancements: persistence of the last applied tier, richer telemetry/diagnostics, and per-profile notes surfaced in the UI.

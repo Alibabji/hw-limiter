@@ -1,13 +1,14 @@
 #pragma once
 
+#include <optional>
 #include <string>
 #include <vector>
-#include <optional>
 
 #include "HardwareInfo.hpp"
 #include "ProfileLoader.hpp"
 #include "ProfileEngine.hpp"
 #include "PowerThrottler.hpp"
+#include "BenchmarkTypes.hpp"
 
 struct AppState {
     HardwareSnapshot snapshot;
@@ -20,6 +21,11 @@ struct AppState {
 
     std::optional<CpuThrottleTarget> selectedCpu;
     std::optional<GpuThrottleTarget> selectedGpu;
+
+    BenchmarkSnapshot benchmark;
+    double cpuNominalFrequencyMHz = 0.0;
+    double gpuNominalClockMHz = 0.0;
+    double gpuNominalPowerWatts = 0.0;
 
     bool initialized = false;
 };

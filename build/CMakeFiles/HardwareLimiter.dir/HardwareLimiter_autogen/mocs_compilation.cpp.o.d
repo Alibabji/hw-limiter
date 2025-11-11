@@ -1176,6 +1176,7 @@ CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o: \
   /Users/nickjeong/projects/hw-limiter/build/HardwareLimiter_autogen/6YEA5652QU/../../../include/SimpleJson.hpp \
   /Users/nickjeong/projects/hw-limiter/build/HardwareLimiter_autogen/6YEA5652QU/../../../include/ProfileEngine.hpp \
   /Users/nickjeong/projects/hw-limiter/build/HardwareLimiter_autogen/6YEA5652QU/../../../include/PowerThrottler.hpp \
+  /Users/nickjeong/projects/hw-limiter/build/HardwareLimiter_autogen/6YEA5652QU/../../../include/BenchmarkTypes.hpp \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qtmochelpers.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qtmocconstants.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/q20algorithm.h \
