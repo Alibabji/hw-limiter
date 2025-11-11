@@ -9,15 +9,25 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(HardwareLimiter
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
+find_package(Qt6 COMPONENTS Widgets REQUIRED)
+
+add_executable(HardwareLimiter WIN32 MACOSX_BUNDLE
     src/main.cpp
+    src/MainWindow.cpp
     src/HardwareInfo.cpp
     src/ProfileLoader.cpp
     src/ProfileEngine.cpp
     src/PowerThrottler.cpp
+    include/MainWindow.hpp
 )
 
 target_include_directories(HardwareLimiter PRIVATE include)
+
+target_link_libraries(HardwareLimiter PRIVATE Qt6::Widgets)
 
 if(WIN32)
     target_link_libraries(HardwareLimiter PRIVATE

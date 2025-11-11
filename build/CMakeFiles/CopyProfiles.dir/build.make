@@ -68,7 +68,7 @@ include CMakeFiles/CopyProfiles.dir/progress.make
 
 CMakeFiles/CopyProfiles:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying profile bundle"
-	/opt/homebrew/bin/cmake -E copy_if_different /Users/nickjeong/projects/hw-limiter/resources/profiles.json /Users/nickjeong/projects/hw-limiter/build/profiles.json
+	/opt/homebrew/bin/cmake -E copy_if_different /Users/nickjeong/projects/hw-limiter/resources/profiles.json /Users/nickjeong/projects/hw-limiter/build/HardwareLimiter.app/Contents/MacOS/profiles.json
 
 CMakeFiles/CopyProfiles.dir/codegen:
 .PHONY : CMakeFiles/CopyProfiles.dir/codegen

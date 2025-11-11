@@ -1,0 +1,88 @@
+{
+  "cpuProfiles": [
+    {
+      "id": "intel-i7-13700k",
+      "label": "Intel Core i7-13700K",
+      "matchTokens": ["i7-13700k", "13700k"],
+      "targets": [
+        {
+          "id": "intel-i7-10700",
+          "label": "Mimic Intel Core i7-10700",
+          "maxFrequencyMHz": 4700,
+          "maxCores": 8,
+          "maxThreads": 16,
+          "maxPercent": 75,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3"
+          ]
+        },
+        {
+          "id": "intel-i7-6700",
+          "label": "Mimic Intel Core i7-6700",
+          "maxFrequencyMHz": 4000,
+          "maxCores": 4,
+          "maxThreads": 8,
+          "maxPercent": 60,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amd-ryzen-9-7950x",
+      "label": "AMD Ryzen 9 7950X",
+      "matchTokens": ["7950x", "ryzen 9 7950"],
+      "targets": [
+        {
+          "id": "amd-ryzen-7-5800x",
+          "label": "Mimic Ryzen 7 5800X",
+          "maxFrequencyMHz": 4500,
+          "maxCores": 8,
+          "maxThreads": 16,
+          "maxPercent": 70,
+          "extraCommands": [
+            "powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2"
+          ]
+        }
+      ]
+    }
+  ],
+  "gpuProfiles": [
+    {
+      "id": "nvidia-rtx-4090",
+      "label": "NVIDIA GeForce RTX 4090",
+      "matchTokens": ["rtx 4090", "4090"],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3080",
+          "label": "Mimic RTX 3080",
+          "maxFrequencyMHz": 1710,
+          "powerLimitWatts": 320,
+          "nvidiaSmiArgs": ["-lgc", "1400,1400", "-pl", "320"]
+        },
+        {
+          "id": "nvidia-rtx-3070",
+          "label": "Mimic RTX 3070",
+          "maxFrequencyMHz": 1725,
+          "powerLimitWatts": 240,
+          "nvidiaSmiArgs": ["-lgc", "1200,1200", "-pl", "240"]
+        }
+      ]
+    },
+    {
+      "id": "nvidia-rtx-3080",
+      "label": "NVIDIA GeForce RTX 3080",
+      "matchTokens": ["rtx 3080", "3080"],
+      "targets": [
+        {
+          "id": "nvidia-rtx-3060ti",
+          "label": "Mimic RTX 3060 Ti",
+          "maxFrequencyMHz": 1665,
+          "powerLimitWatts": 200,
+          "nvidiaSmiArgs": ["-lgc", "1100,1100", "-pl", "200"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_HardwareLimiter_FILE /Users/nickjeong/projects/hw-limiter/build/HardwareLimiter.app/Contents/MacOS/HardwareLimiter)
+set(__QT_DEPLOY_TARGET_HardwareLimiter_TYPE EXECUTABLE)

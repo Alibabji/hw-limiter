@@ -1,14 +1,14 @@
 # Hardware Limiter Architecture
 
 ## Goals
-- Detect host CPU/GPU models using Windows native APIs.
+- Detect host CPU/GPU models using platform-native APIs (Windows + macOS).
 - Present GUI with selectable "profile targets" that map to reduced performance levels.
 - Apply throttling through built-in Windows power settings (CPU), vendor CLIs (GPU), and optional custom scripts.
 
 ## Components
-- **App (Win32 GUI)**: Handles message loop, renders basic controls, and orchestrates hardware queries + profile application.
+- **Qt App Shell** (`src/MainWindow.cpp`): Cross-platform UI composed with Qt Widgets. Hosts the hardware snapshot, renders downgrade lists, and triggers throttling commands. Built as a Win32 exe and macOS bundle for double-click launches.
 - **HardwareInfo** (`src/HardwareInfo.*`): Uses `__cpuid`/DXGI on Windows and `sysctl`/`system_profiler` on macOS to expose `CpuInfo` / `GpuInfo` structs.
-- **ProfileLoader** (`src/ProfileLoader.*`): Reads `resources/profiles.json` (RapidJSON) into `CpuProfile`/`GpuProfile` objects, including supported downgrade targets.
+- **ProfileLoader** (`src/ProfileLoader.*`): Reads `resources/profiles.json` with a lightweight in-repo parser (`SimpleJson.hpp`) into strongly-typed `CpuProfile`/`GpuProfile` objects.
 - **PowerThrottler** (`src/PowerThrottler.*`): Applies CPU targets via PowerCfg (max processor state, affinity, boost mode) and calls vendor hooks (e.g., `nvidia-smi -lgc`) when available.
 - **ProfileEngine** (`src/ProfileEngine.*`): Matches live hardware to compatible downgrade options and exposes them to the UI.
 
@@ -25,8 +25,8 @@
 - Revert path provided via "Restore defaults" button that reapplies original power plan and clears vendor limits.
 
 ## Platform Notes
-- **Windows**: Full GUI + throttling pipeline (power plan + `nvidia-smi`).
-- **macOS**: CLI preview. `HardwareInfo` falls back to `sysctl` + `system_profiler` to report CPU/GPU metadata, but throttling calls return "not supported". The shared code path (profiles, engine) still runs so results stay consistent with Windows.
+- **Windows**: Full GUI + throttling pipeline. `PowerThrottler` shells out to `powercfg` and `nvidia-smi`, so administrator privileges and NVIDIA drivers are required.
+- **macOS**: Identical Qt GUI for planning and visualization. Hardware probes rely on `sysctl` + `system_profiler`, but throttling calls return "not supported" (the UI will surface that message). Bundled as `HardwareLimiter.app` for double-click launches.
 
 ## Next Steps
 - Implement cross-vendor throttling adapters.

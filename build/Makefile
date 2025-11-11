@@ -142,6 +142,56 @@ CopyProfiles/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CopyProfiles.dir/build.make CMakeFiles/CopyProfiles.dir/build
 .PHONY : CopyProfiles/fast
 
+#=============================================================================
+# Target rules for targets named HardwareLimiter_autogen_timestamp_deps
+
+# Build rule for target.
+HardwareLimiter_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HardwareLimiter_autogen_timestamp_deps
+.PHONY : HardwareLimiter_autogen_timestamp_deps
+
+# fast build rule for target.
+HardwareLimiter_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter_autogen_timestamp_deps.dir/build.make CMakeFiles/HardwareLimiter_autogen_timestamp_deps.dir/build
+.PHONY : HardwareLimiter_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named HardwareLimiter_autogen
+
+# Build rule for target.
+HardwareLimiter_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HardwareLimiter_autogen
+.PHONY : HardwareLimiter_autogen
+
+# fast build rule for target.
+HardwareLimiter_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter_autogen.dir/build.make CMakeFiles/HardwareLimiter_autogen.dir/build
+.PHONY : HardwareLimiter_autogen/fast
+
+HardwareLimiter_autogen/mocs_compilation.o: HardwareLimiter_autogen/mocs_compilation.cpp.o
+.PHONY : HardwareLimiter_autogen/mocs_compilation.o
+
+# target to build an object file
+HardwareLimiter_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o
+.PHONY : HardwareLimiter_autogen/mocs_compilation.cpp.o
+
+HardwareLimiter_autogen/mocs_compilation.i: HardwareLimiter_autogen/mocs_compilation.cpp.i
+.PHONY : HardwareLimiter_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+HardwareLimiter_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.i
+.PHONY : HardwareLimiter_autogen/mocs_compilation.cpp.i
+
+HardwareLimiter_autogen/mocs_compilation.s: HardwareLimiter_autogen/mocs_compilation.cpp.s
+.PHONY : HardwareLimiter_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+HardwareLimiter_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.s
+.PHONY : HardwareLimiter_autogen/mocs_compilation.cpp.s
+
 src/HardwareInfo.o: src/HardwareInfo.cpp.o
 .PHONY : src/HardwareInfo.o
 
@@ -165,6 +215,30 @@ src/HardwareInfo.s: src/HardwareInfo.cpp.s
 src/HardwareInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.s
 .PHONY : src/HardwareInfo.cpp.s
+
+src/MainWindow.o: src/MainWindow.cpp.o
+.PHONY : src/MainWindow.o
+
+# target to build an object file
+src/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.o
+.PHONY : src/MainWindow.cpp.o
+
+src/MainWindow.i: src/MainWindow.cpp.i
+.PHONY : src/MainWindow.i
+
+# target to preprocess a source file
+src/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.i
+.PHONY : src/MainWindow.cpp.i
+
+src/MainWindow.s: src/MainWindow.cpp.s
+.PHONY : src/MainWindow.s
+
+# target to generate assembly for a file
+src/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.s
+.PHONY : src/MainWindow.cpp.s
 
 src/PowerThrottler.o: src/PowerThrottler.cpp.o
 .PHONY : src/PowerThrottler.o
@@ -271,10 +345,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CopyProfiles"
+	@echo "... HardwareLimiter_autogen"
+	@echo "... HardwareLimiter_autogen_timestamp_deps"
 	@echo "... HardwareLimiter"
+	@echo "... HardwareLimiter_autogen/mocs_compilation.o"
+	@echo "... HardwareLimiter_autogen/mocs_compilation.i"
+	@echo "... HardwareLimiter_autogen/mocs_compilation.s"
 	@echo "... src/HardwareInfo.o"
 	@echo "... src/HardwareInfo.i"
 	@echo "... src/HardwareInfo.s"
+	@echo "... src/MainWindow.o"
+	@echo "... src/MainWindow.i"
+	@echo "... src/MainWindow.s"
 	@echo "... src/PowerThrottler.o"
 	@echo "... src/PowerThrottler.i"
 	@echo "... src/PowerThrottler.s"

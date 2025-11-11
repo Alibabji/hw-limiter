@@ -1,44 +1,73 @@
 # Hardware Limiter
 
-Hardware Limiter is a Windows-only C++ utility that inventories the local CPU/GPU, shows downgrade targets, and applies throttling so the machine can mimic slower hardware. It ships with a lightweight Win32 GUI, JSON-driven profile catalog, and command hooks that call `powercfg` and `nvidia-smi` for best-effort enforcement.
+Hardware Limiter is a cross-platform Qt application that inventories the local CPU/GPU, surfaces supported downgrade targets, and (on Windows) applies throttling so the machine can mimic slower hardware. It ships with a modern GUI, JSON-driven profile catalog, and command hooks that call `powercfg` plus `nvidia-smi` for best-effort enforcement. macOS builds share the same UI for planning and comparison, but enforcement remains Windows-only.
 
 ## Project Layout
-- `src/` – Win32 entry point plus modules (`HardwareInfo`, `ProfileLoader`, `ProfileEngine`, `PowerThrottler`).
-- `include/` – Public headers and a compact JSON parser (`SimpleJson.hpp`).
-- `resources/profiles.json` – Reference downgrade profiles with CPU/GPU limits and vendor commands.
-- `docs/ARCHITECTURE.md` – Module-level design notes and roadmap.
+- `src/MainWindow.cpp` - Qt Widgets-based UI shell that drives the hardware snapshot, profile engine, and throttling actions.
+- `src/HardwareInfo.cpp` - Platform-specific hardware probes (CPUID/DXGI on Windows, `sysctl`/`system_profiler` on macOS).
+- `src/Profile*` - JSON loader, matching engine, and throttling adapters.
+- `include/` - Public headers and a minimal JSON parser (`SimpleJson.hpp`).
+- `resources/profiles.json` - Downgrade catalog; copy this next to the executable/app bundle.
+- `docs/ARCHITECTURE.md` / `docs/SUPPORTED_TARGETS.md` - High-level design plus the currently supported SKU->target matrix.
 
-## Build Instructions (Windows)
-1. Install Visual Studio 2022 (Desktop C++ workload) and CMake 3.24+.
-2. Open a **x64 Native Tools** prompt and run:
+## Dependencies
+- CMake 3.24+
+- Qt 6.5+ (Widgets module)
+- Windows: Visual Studio 2022 (Desktop C++), `nvidia-smi` on `PATH`, administrator rights to change power plans.
+- macOS: Xcode Command Line Tools + `brew install qt`.
+
+## Build Instructions
+### Windows (MSVC + Qt)
+1. Install Qt 6 (add the MSVC 2022 component). Note the Qt installation path (e.g., `C:\Qt\6.6.2\msvc2022_64`).
+2. Open an **x64 Native Tools for VS 2022** prompt and set `CMAKE_PREFIX_PATH`:
+   ```cmd
+   set CMAKE_PREFIX_PATH=C:\Qt\6.6.2\msvc2022_64
+   ```
+3. Configure and build:
    ```cmd
    cmake -S . -B build -G "Visual Studio 17 2022" -A x64
    cmake --build build --config Release
    ```
-3. Copy `build/Release/HardwareLimiter.exe` and `resources/profiles.json` to your distribution folder (the build step already drops a copy next to the binary).
+4. The output folder contains `HardwareLimiter.exe`, `profiles.json`, and the Qt runtime DLLs (use `windeployqt` if you need redistribution).
 
-## Build Instructions (macOS preview)
-The macOS target is a CLI preview that reports detected hardware and compatible downgrade profiles. It does not apply throttling yet.
-
-```bash
-cmake -S . -B build -G "Unix Makefiles"
-cmake --build build
-./build/HardwareLimiter
-```
+### macOS (Clang + Qt)
+1. `brew install qt`
+2. Configure and build:
+   ```bash
+   cmake -S . -B build -G "Unix Makefiles" -DCMAKE_PREFIX_PATH="$(brew --prefix qt)"
+   cmake --build build
+   ```
+3. The build produces `HardwareLimiter.app`; copy `profiles.json` next to the bundle or run `macdeployqt build/HardwareLimiter.app` to prepare a standalone app.
 
 ## Running & Permissions
-- Launch `HardwareLimiter.exe` via **Run as administrator** so the app can modify power plans and call `nvidia-smi`.
-- The GUI displays detected hardware, compatible downgrade targets, and buttons to apply CPU/GPU limits or restore defaults.
-- CPU throttling adjusts the active power scheme (`PROCTHROTTLEMAX`, `PROCFREQMAX`, and boost settings). GPU throttling currently shells out to `nvidia-smi`, so NVIDIA drivers must be installed and `nvidia-smi` must be on `PATH`.
-- On macOS the binary prints detected hardware and available downgrade profiles for reference; throttling is limited to Windows for now.
+- Double-click `HardwareLimiter.exe` (right-click -> **Run as administrator**) or launch `HardwareLimiter.app`.
+- The top banner lists detected hardware; CPU/GPU downgrade lists light up when the current machine matches entries in `resources/profiles.json`.
+- On Windows, clicking **Apply** executes the associated `powercfg` / `nvidia-smi` commands. On macOS and unsupported GPUs the app will show a descriptive message instead of attempting throttling.
+- Use **Restore Defaults** to revert the active power plan and clear clocks.
+
+## Supported Hardware Profiles
+See `docs/SUPPORTED_TARGETS.md` for the authoritative list. The current catalog includes:
+
+### CPUs
+| Host SKU | Downgrade Targets |
+| --- | --- |
+| Intel Core i7-13700K | i7-10700 (75% cap, boost 4.7 GHz), i7-6700 (60% cap, boost 4.0 GHz) |
+| AMD Ryzen 9 7950X | Ryzen 7 5800X (70% cap, boost 4.5 GHz) |
+
+### GPUs
+| Host SKU | Downgrade Targets |
+| --- | --- |
+| NVIDIA RTX 4090 | RTX 3080 (1710 MHz / 320 W), RTX 3070 (1725 MHz / 240 W) |
+| NVIDIA RTX 3080 | RTX 3060 Ti (1665 MHz / 200 W) |
 
 ## Customizing Profiles
-- Edit `resources/profiles.json` to add/adjust SKUs. Each profile carries `matchTokens` (case-insensitive substrings) and a `targets` array describing available downgrades.
-- `extraCommands` let you run additional `powercfg` or vendor CLIs; keep them idempotent and safe for elevated execution.
-- After editing the file, rebuild or manually copy it beside `HardwareLimiter.exe`.
+- Extend `resources/profiles.json` with additional `cpuProfiles` / `gpuProfiles`. Each profile lists the substrings required to match a host (`matchTokens`) and the downgrade presets (`targets`).
+- CPU targets can declare `maxFrequencyMHz`, `maxPercent`, logical/physical limits, and optional `extraCommands` (executed sequentially).
+- GPU targets currently focus on NVIDIA devices via `nvidia-smi` arguments; add ADLX/Intel Arc commands if you need broader coverage.
+- Keep the file ASCII-only (the lightweight parser ignores full Unicode) and ship an updated copy next to the binary.
 
 ## Limitations & Next Steps
-- GPU throttling supports NVIDIA devices only; AMD/Intel backends would need vendor CLIs (e.g., ADLX, Arc Control).
-- The JSON parser is minimal and does not handle Unicode beyond ASCII; keep profile files ASCII-only.
-- No persistence layer yet—restarts revert to stock behavior until you apply a target again.
-- Consider adding signature checks for profile bundles before distributing the tool in a private repository.
+- Enforcement is Windows-only; macOS/Linux builds are for planning, comparison, and profile editing.
+- GPU throttling supports NVIDIA cards via `nvidia-smi`; AMD/Intel backends require vendor-specific tooling.
+- Profiles are unsigned JSON; consider signing or hashing them before distributing the app.
+- No persistent settings yet—consider storing the last-applied profile and adding telemetry around success/failure states.
