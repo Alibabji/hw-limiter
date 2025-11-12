@@ -4,6 +4,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RESOURCE_PATH = ROOT / "resources" / "profiles.json"
 
+# Utility maps for SKU generation
+INTEL_SUFFIX = {"i3": 100, "i5": 600, "i7": 700, "i9": 900}
+INTEL_VARIANTS = {
+    "i3": ["", "T", "F"],
+    "i5": ["", "F", "KF"],
+    "i7": ["", "K", "KF"],
+    "i9": ["", "K", "KF"],
+}
+AMD_SUFFIX = {3: 200, 5: 600, 7: 700, 9: 900}
+AMD_VARIANTS = {
+    3: [""],
+    5: ["", "X"],
+    7: ["", "X", "XT"],
+    9: ["", "X", "XT"],
+}
+
 intel_generations = [
     (6, "6th Gen (Skylake)", 4000),
     (7, "7th Gen (Kaby Lake)", 4100),
@@ -90,15 +106,30 @@ def intel_cpu_profiles():
                 f"core {seg_code} {gen}th",
                 f"{seg_code} {gen}th",
             ]
+            suffix = INTEL_SUFFIX.get(seg_code, 100)
+            sku_number = gen * 1000 + suffix
+            for variant in INTEL_VARIANTS.get(seg_code, [""]):
+                sku_text = f"{sku_number}{variant}".lower()
+                tokens.extend([
+                    f"{seg_code}{sku_text}",
+                    f"{seg_code}-{sku_text}",
+                    f"{seg_code} {sku_text}",
+                    sku_text,
+                ])
+            tokens = list(dict.fromkeys(tokens))
+
             targets = []
             for lower_gen, target_label, target_freq in intel_generations:
                 if lower_gen >= gen:
                     continue
                 delta = gen - lower_gen
                 percent = max(25, base_percent - delta * 6)
+                target_suffix = INTEL_SUFFIX.get(seg_code, 100)
+                target_sku = lower_gen * 1000 + target_suffix
+                display_model = f"{seg_code.upper()}-{target_sku}"
                 target = {
                     "id": f"{profile_id}-to-gen{lower_gen}",
-                    "label": f"Mimic Intel {seg_label} {target_label}",
+                    "label": f"Mimic Intel {seg_label} {display_model}",
                     "maxFrequencyMHz": target_freq,
                     "maxCores": 0,
                     "maxThreads": 0,
@@ -131,6 +162,15 @@ def amd_cpu_profiles():
                 tokens.append(f"ryzen {seg_number} {prefix}")
                 tokens.append(f"ryzen {seg_number}-{prefix}")
             tokens.append(f"ryzen {seg_number} {series}")
+            sku_base = AMD_SUFFIX.get(seg_number, 500)
+            approx_sku = series + sku_base
+            for variant in AMD_VARIANTS.get(seg_number, [""]):
+                sku_token = f"{approx_sku}{variant}".lower()
+                tokens.extend([
+                    f"ryzen {seg_number} {sku_token}",
+                    f"ryzen {seg_number}-{sku_token}",
+                    sku_token,
+                ])
             tokens = list(dict.fromkeys(tokens))
             targets = []
             series_index = next((i for i, tup in enumerate(amd_series) if tup[0] == series), None)
@@ -140,9 +180,11 @@ def amd_cpu_profiles():
                 target_series, target_label, target_freq = amd_series[target_index]
                 delta = series_index - target_index
                 percent = max(28, base_percent - delta * 7)
+                target_base = AMD_SUFFIX.get(seg_number, 500)
+                target_sku = target_series + target_base
                 targets.append({
                     "id": f"{profile_id}-to-{target_series}",
-                    "label": f"Mimic {seg_label} {target_label}",
+                    "label": f"Mimic {seg_label} {target_sku}",
                     "maxFrequencyMHz": target_freq,
                     "maxCores": 0,
                     "maxThreads": 0,

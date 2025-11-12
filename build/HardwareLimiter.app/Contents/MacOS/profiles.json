@@ -7,12 +7,24 @@
         "i3-7",
         "core i3 7",
         "core i3 7th",
-        "i3 7th"
+        "i3 7th",
+        "i37100",
+        "i3-7100",
+        "i3 7100",
+        "7100",
+        "i37100t",
+        "i3-7100t",
+        "i3 7100t",
+        "7100t",
+        "i37100f",
+        "i3-7100f",
+        "i3 7100f",
+        "7100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen7-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -32,12 +44,24 @@
         "i3-8",
         "core i3 8",
         "core i3 8th",
-        "i3 8th"
+        "i3 8th",
+        "i38100",
+        "i3-8100",
+        "i3 8100",
+        "8100",
+        "i38100t",
+        "i3-8100t",
+        "i3 8100t",
+        "8100t",
+        "i38100f",
+        "i3-8100f",
+        "i3 8100f",
+        "8100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen8-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -49,7 +73,7 @@
         },
         {
           "id": "intel-i3-gen8-to-gen7",
-          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i3 I3-7100",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -69,12 +93,24 @@
         "i3-9",
         "core i3 9",
         "core i3 9th",
-        "i3 9th"
+        "i3 9th",
+        "i39100",
+        "i3-9100",
+        "i3 9100",
+        "9100",
+        "i39100t",
+        "i3-9100t",
+        "i3 9100t",
+        "9100t",
+        "i39100f",
+        "i3-9100f",
+        "i3 9100f",
+        "9100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen9-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -86,7 +122,7 @@
         },
         {
           "id": "intel-i3-gen9-to-gen7",
-          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i3 I3-7100",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -98,7 +134,7 @@
         },
         {
           "id": "intel-i3-gen9-to-gen8",
-          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i3 I3-8100",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -118,12 +154,24 @@
         "i3-10",
         "core i3 10",
         "core i3 10th",
-        "i3 10th"
+        "i3 10th",
+        "i310100",
+        "i3-10100",
+        "i3 10100",
+        "10100",
+        "i310100t",
+        "i3-10100t",
+        "i3 10100t",
+        "10100t",
+        "i310100f",
+        "i3-10100f",
+        "i3 10100f",
+        "10100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen10-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -135,7 +183,7 @@
         },
         {
           "id": "intel-i3-gen10-to-gen7",
-          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i3 I3-7100",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -147,7 +195,7 @@
         },
         {
           "id": "intel-i3-gen10-to-gen8",
-          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i3 I3-8100",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -159,7 +207,7 @@
         },
         {
           "id": "intel-i3-gen10-to-gen9",
-          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i3 I3-9100",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -179,12 +227,24 @@
         "i3-11",
         "core i3 11",
         "core i3 11th",
-        "i3 11th"
+        "i3 11th",
+        "i311100",
+        "i3-11100",
+        "i3 11100",
+        "11100",
+        "i311100t",
+        "i3-11100t",
+        "i3 11100t",
+        "11100t",
+        "i311100f",
+        "i3-11100f",
+        "i3 11100f",
+        "11100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen11-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -196,7 +256,7 @@
         },
         {
           "id": "intel-i3-gen11-to-gen7",
-          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i3 I3-7100",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -208,7 +268,7 @@
         },
         {
           "id": "intel-i3-gen11-to-gen8",
-          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i3 I3-8100",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -220,7 +280,7 @@
         },
         {
           "id": "intel-i3-gen11-to-gen9",
-          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i3 I3-9100",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -232,7 +292,7 @@
         },
         {
           "id": "intel-i3-gen11-to-gen10",
-          "label": "Mimic Intel Core i3 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i3 I3-10100",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -252,12 +312,24 @@
         "i3-12",
         "core i3 12",
         "core i3 12th",
-        "i3 12th"
+        "i3 12th",
+        "i312100",
+        "i3-12100",
+        "i3 12100",
+        "12100",
+        "i312100t",
+        "i3-12100t",
+        "i3 12100t",
+        "12100t",
+        "i312100f",
+        "i3-12100f",
+        "i3 12100f",
+        "12100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen12-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -269,7 +341,7 @@
         },
         {
           "id": "intel-i3-gen12-to-gen7",
-          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i3 I3-7100",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -281,7 +353,7 @@
         },
         {
           "id": "intel-i3-gen12-to-gen8",
-          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i3 I3-8100",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -293,7 +365,7 @@
         },
         {
           "id": "intel-i3-gen12-to-gen9",
-          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i3 I3-9100",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -305,7 +377,7 @@
         },
         {
           "id": "intel-i3-gen12-to-gen10",
-          "label": "Mimic Intel Core i3 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i3 I3-10100",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -317,7 +389,7 @@
         },
         {
           "id": "intel-i3-gen12-to-gen11",
-          "label": "Mimic Intel Core i3 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i3 I3-11100",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -337,12 +409,24 @@
         "i3-13",
         "core i3 13",
         "core i3 13th",
-        "i3 13th"
+        "i3 13th",
+        "i313100",
+        "i3-13100",
+        "i3 13100",
+        "13100",
+        "i313100t",
+        "i3-13100t",
+        "i3 13100t",
+        "13100t",
+        "i313100f",
+        "i3-13100f",
+        "i3 13100f",
+        "13100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen13-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -354,7 +438,7 @@
         },
         {
           "id": "intel-i3-gen13-to-gen7",
-          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i3 I3-7100",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -366,7 +450,7 @@
         },
         {
           "id": "intel-i3-gen13-to-gen8",
-          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i3 I3-8100",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -378,7 +462,7 @@
         },
         {
           "id": "intel-i3-gen13-to-gen9",
-          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i3 I3-9100",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -390,7 +474,7 @@
         },
         {
           "id": "intel-i3-gen13-to-gen10",
-          "label": "Mimic Intel Core i3 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i3 I3-10100",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -402,7 +486,7 @@
         },
         {
           "id": "intel-i3-gen13-to-gen11",
-          "label": "Mimic Intel Core i3 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i3 I3-11100",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -414,7 +498,7 @@
         },
         {
           "id": "intel-i3-gen13-to-gen12",
-          "label": "Mimic Intel Core i3 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i3 I3-12100",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -434,12 +518,24 @@
         "i3-14",
         "core i3 14",
         "core i3 14th",
-        "i3 14th"
+        "i3 14th",
+        "i314100",
+        "i3-14100",
+        "i3 14100",
+        "14100",
+        "i314100t",
+        "i3-14100t",
+        "i3 14100t",
+        "14100t",
+        "i314100f",
+        "i3-14100f",
+        "i3 14100f",
+        "14100f"
       ],
       "targets": [
         {
           "id": "intel-i3-gen14-to-gen6",
-          "label": "Mimic Intel Core i3 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i3 I3-6100",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -451,7 +547,7 @@
         },
         {
           "id": "intel-i3-gen14-to-gen7",
-          "label": "Mimic Intel Core i3 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i3 I3-7100",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -463,7 +559,7 @@
         },
         {
           "id": "intel-i3-gen14-to-gen8",
-          "label": "Mimic Intel Core i3 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i3 I3-8100",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -475,7 +571,7 @@
         },
         {
           "id": "intel-i3-gen14-to-gen9",
-          "label": "Mimic Intel Core i3 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i3 I3-9100",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -487,7 +583,7 @@
         },
         {
           "id": "intel-i3-gen14-to-gen10",
-          "label": "Mimic Intel Core i3 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i3 I3-10100",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -499,7 +595,7 @@
         },
         {
           "id": "intel-i3-gen14-to-gen11",
-          "label": "Mimic Intel Core i3 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i3 I3-11100",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -511,7 +607,7 @@
         },
         {
           "id": "intel-i3-gen14-to-gen12",
-          "label": "Mimic Intel Core i3 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i3 I3-12100",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -523,7 +619,7 @@
         },
         {
           "id": "intel-i3-gen14-to-gen13",
-          "label": "Mimic Intel Core i3 13th Gen (Raptor Lake)",
+          "label": "Mimic Intel Core i3 I3-13100",
           "maxFrequencyMHz": 5300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -543,12 +639,24 @@
         "i5-7",
         "core i5 7",
         "core i5 7th",
-        "i5 7th"
+        "i5 7th",
+        "i57600",
+        "i5-7600",
+        "i5 7600",
+        "7600",
+        "i57600f",
+        "i5-7600f",
+        "i5 7600f",
+        "7600f",
+        "i57600kf",
+        "i5-7600kf",
+        "i5 7600kf",
+        "7600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen7-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -568,12 +676,24 @@
         "i5-8",
         "core i5 8",
         "core i5 8th",
-        "i5 8th"
+        "i5 8th",
+        "i58600",
+        "i5-8600",
+        "i5 8600",
+        "8600",
+        "i58600f",
+        "i5-8600f",
+        "i5 8600f",
+        "8600f",
+        "i58600kf",
+        "i5-8600kf",
+        "i5 8600kf",
+        "8600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen8-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -585,7 +705,7 @@
         },
         {
           "id": "intel-i5-gen8-to-gen7",
-          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i5 I5-7600",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -605,12 +725,24 @@
         "i5-9",
         "core i5 9",
         "core i5 9th",
-        "i5 9th"
+        "i5 9th",
+        "i59600",
+        "i5-9600",
+        "i5 9600",
+        "9600",
+        "i59600f",
+        "i5-9600f",
+        "i5 9600f",
+        "9600f",
+        "i59600kf",
+        "i5-9600kf",
+        "i5 9600kf",
+        "9600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen9-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -622,7 +754,7 @@
         },
         {
           "id": "intel-i5-gen9-to-gen7",
-          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i5 I5-7600",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -634,7 +766,7 @@
         },
         {
           "id": "intel-i5-gen9-to-gen8",
-          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i5 I5-8600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -654,12 +786,24 @@
         "i5-10",
         "core i5 10",
         "core i5 10th",
-        "i5 10th"
+        "i5 10th",
+        "i510600",
+        "i5-10600",
+        "i5 10600",
+        "10600",
+        "i510600f",
+        "i5-10600f",
+        "i5 10600f",
+        "10600f",
+        "i510600kf",
+        "i5-10600kf",
+        "i5 10600kf",
+        "10600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen10-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -671,7 +815,7 @@
         },
         {
           "id": "intel-i5-gen10-to-gen7",
-          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i5 I5-7600",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -683,7 +827,7 @@
         },
         {
           "id": "intel-i5-gen10-to-gen8",
-          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i5 I5-8600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -695,7 +839,7 @@
         },
         {
           "id": "intel-i5-gen10-to-gen9",
-          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i5 I5-9600",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -715,12 +859,24 @@
         "i5-11",
         "core i5 11",
         "core i5 11th",
-        "i5 11th"
+        "i5 11th",
+        "i511600",
+        "i5-11600",
+        "i5 11600",
+        "11600",
+        "i511600f",
+        "i5-11600f",
+        "i5 11600f",
+        "11600f",
+        "i511600kf",
+        "i5-11600kf",
+        "i5 11600kf",
+        "11600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen11-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -732,7 +888,7 @@
         },
         {
           "id": "intel-i5-gen11-to-gen7",
-          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i5 I5-7600",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -744,7 +900,7 @@
         },
         {
           "id": "intel-i5-gen11-to-gen8",
-          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i5 I5-8600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -756,7 +912,7 @@
         },
         {
           "id": "intel-i5-gen11-to-gen9",
-          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i5 I5-9600",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -768,7 +924,7 @@
         },
         {
           "id": "intel-i5-gen11-to-gen10",
-          "label": "Mimic Intel Core i5 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i5 I5-10600",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -788,12 +944,24 @@
         "i5-12",
         "core i5 12",
         "core i5 12th",
-        "i5 12th"
+        "i5 12th",
+        "i512600",
+        "i5-12600",
+        "i5 12600",
+        "12600",
+        "i512600f",
+        "i5-12600f",
+        "i5 12600f",
+        "12600f",
+        "i512600kf",
+        "i5-12600kf",
+        "i5 12600kf",
+        "12600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen12-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -805,7 +973,7 @@
         },
         {
           "id": "intel-i5-gen12-to-gen7",
-          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i5 I5-7600",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -817,7 +985,7 @@
         },
         {
           "id": "intel-i5-gen12-to-gen8",
-          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i5 I5-8600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -829,7 +997,7 @@
         },
         {
           "id": "intel-i5-gen12-to-gen9",
-          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i5 I5-9600",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -841,7 +1009,7 @@
         },
         {
           "id": "intel-i5-gen12-to-gen10",
-          "label": "Mimic Intel Core i5 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i5 I5-10600",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -853,7 +1021,7 @@
         },
         {
           "id": "intel-i5-gen12-to-gen11",
-          "label": "Mimic Intel Core i5 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i5 I5-11600",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -873,12 +1041,24 @@
         "i5-13",
         "core i5 13",
         "core i5 13th",
-        "i5 13th"
+        "i5 13th",
+        "i513600",
+        "i5-13600",
+        "i5 13600",
+        "13600",
+        "i513600f",
+        "i5-13600f",
+        "i5 13600f",
+        "13600f",
+        "i513600kf",
+        "i5-13600kf",
+        "i5 13600kf",
+        "13600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen13-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -890,7 +1070,7 @@
         },
         {
           "id": "intel-i5-gen13-to-gen7",
-          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i5 I5-7600",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -902,7 +1082,7 @@
         },
         {
           "id": "intel-i5-gen13-to-gen8",
-          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i5 I5-8600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -914,7 +1094,7 @@
         },
         {
           "id": "intel-i5-gen13-to-gen9",
-          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i5 I5-9600",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -926,7 +1106,7 @@
         },
         {
           "id": "intel-i5-gen13-to-gen10",
-          "label": "Mimic Intel Core i5 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i5 I5-10600",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -938,7 +1118,7 @@
         },
         {
           "id": "intel-i5-gen13-to-gen11",
-          "label": "Mimic Intel Core i5 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i5 I5-11600",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -950,7 +1130,7 @@
         },
         {
           "id": "intel-i5-gen13-to-gen12",
-          "label": "Mimic Intel Core i5 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i5 I5-12600",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -970,12 +1150,24 @@
         "i5-14",
         "core i5 14",
         "core i5 14th",
-        "i5 14th"
+        "i5 14th",
+        "i514600",
+        "i5-14600",
+        "i5 14600",
+        "14600",
+        "i514600f",
+        "i5-14600f",
+        "i5 14600f",
+        "14600f",
+        "i514600kf",
+        "i5-14600kf",
+        "i5 14600kf",
+        "14600kf"
       ],
       "targets": [
         {
           "id": "intel-i5-gen14-to-gen6",
-          "label": "Mimic Intel Core i5 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i5 I5-6600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -987,7 +1179,7 @@
         },
         {
           "id": "intel-i5-gen14-to-gen7",
-          "label": "Mimic Intel Core i5 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i5 I5-7600",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -999,7 +1191,7 @@
         },
         {
           "id": "intel-i5-gen14-to-gen8",
-          "label": "Mimic Intel Core i5 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i5 I5-8600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1011,7 +1203,7 @@
         },
         {
           "id": "intel-i5-gen14-to-gen9",
-          "label": "Mimic Intel Core i5 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i5 I5-9600",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1023,7 +1215,7 @@
         },
         {
           "id": "intel-i5-gen14-to-gen10",
-          "label": "Mimic Intel Core i5 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i5 I5-10600",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1035,7 +1227,7 @@
         },
         {
           "id": "intel-i5-gen14-to-gen11",
-          "label": "Mimic Intel Core i5 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i5 I5-11600",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1047,7 +1239,7 @@
         },
         {
           "id": "intel-i5-gen14-to-gen12",
-          "label": "Mimic Intel Core i5 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i5 I5-12600",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1059,7 +1251,7 @@
         },
         {
           "id": "intel-i5-gen14-to-gen13",
-          "label": "Mimic Intel Core i5 13th Gen (Raptor Lake)",
+          "label": "Mimic Intel Core i5 I5-13600",
           "maxFrequencyMHz": 5300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1079,12 +1271,24 @@
         "i7-7",
         "core i7 7",
         "core i7 7th",
-        "i7 7th"
+        "i7 7th",
+        "i77700",
+        "i7-7700",
+        "i7 7700",
+        "7700",
+        "i77700k",
+        "i7-7700k",
+        "i7 7700k",
+        "7700k",
+        "i77700kf",
+        "i7-7700kf",
+        "i7 7700kf",
+        "7700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen7-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1104,12 +1308,24 @@
         "i7-8",
         "core i7 8",
         "core i7 8th",
-        "i7 8th"
+        "i7 8th",
+        "i78700",
+        "i7-8700",
+        "i7 8700",
+        "8700",
+        "i78700k",
+        "i7-8700k",
+        "i7 8700k",
+        "8700k",
+        "i78700kf",
+        "i7-8700kf",
+        "i7 8700kf",
+        "8700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen8-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1121,7 +1337,7 @@
         },
         {
           "id": "intel-i7-gen8-to-gen7",
-          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i7 I7-7700",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1141,12 +1357,24 @@
         "i7-9",
         "core i7 9",
         "core i7 9th",
-        "i7 9th"
+        "i7 9th",
+        "i79700",
+        "i7-9700",
+        "i7 9700",
+        "9700",
+        "i79700k",
+        "i7-9700k",
+        "i7 9700k",
+        "9700k",
+        "i79700kf",
+        "i7-9700kf",
+        "i7 9700kf",
+        "9700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen9-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1158,7 +1386,7 @@
         },
         {
           "id": "intel-i7-gen9-to-gen7",
-          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i7 I7-7700",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1170,7 +1398,7 @@
         },
         {
           "id": "intel-i7-gen9-to-gen8",
-          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i7 I7-8700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1190,12 +1418,24 @@
         "i7-10",
         "core i7 10",
         "core i7 10th",
-        "i7 10th"
+        "i7 10th",
+        "i710700",
+        "i7-10700",
+        "i7 10700",
+        "10700",
+        "i710700k",
+        "i7-10700k",
+        "i7 10700k",
+        "10700k",
+        "i710700kf",
+        "i7-10700kf",
+        "i7 10700kf",
+        "10700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen10-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1207,7 +1447,7 @@
         },
         {
           "id": "intel-i7-gen10-to-gen7",
-          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i7 I7-7700",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1219,7 +1459,7 @@
         },
         {
           "id": "intel-i7-gen10-to-gen8",
-          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i7 I7-8700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1231,7 +1471,7 @@
         },
         {
           "id": "intel-i7-gen10-to-gen9",
-          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i7 I7-9700",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1251,12 +1491,24 @@
         "i7-11",
         "core i7 11",
         "core i7 11th",
-        "i7 11th"
+        "i7 11th",
+        "i711700",
+        "i7-11700",
+        "i7 11700",
+        "11700",
+        "i711700k",
+        "i7-11700k",
+        "i7 11700k",
+        "11700k",
+        "i711700kf",
+        "i7-11700kf",
+        "i7 11700kf",
+        "11700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen11-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1268,7 +1520,7 @@
         },
         {
           "id": "intel-i7-gen11-to-gen7",
-          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i7 I7-7700",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1280,7 +1532,7 @@
         },
         {
           "id": "intel-i7-gen11-to-gen8",
-          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i7 I7-8700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1292,7 +1544,7 @@
         },
         {
           "id": "intel-i7-gen11-to-gen9",
-          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i7 I7-9700",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1304,7 +1556,7 @@
         },
         {
           "id": "intel-i7-gen11-to-gen10",
-          "label": "Mimic Intel Core i7 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i7 I7-10700",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1324,12 +1576,24 @@
         "i7-12",
         "core i7 12",
         "core i7 12th",
-        "i7 12th"
+        "i7 12th",
+        "i712700",
+        "i7-12700",
+        "i7 12700",
+        "12700",
+        "i712700k",
+        "i7-12700k",
+        "i7 12700k",
+        "12700k",
+        "i712700kf",
+        "i7-12700kf",
+        "i7 12700kf",
+        "12700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen12-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1341,7 +1605,7 @@
         },
         {
           "id": "intel-i7-gen12-to-gen7",
-          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i7 I7-7700",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1353,7 +1617,7 @@
         },
         {
           "id": "intel-i7-gen12-to-gen8",
-          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i7 I7-8700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1365,7 +1629,7 @@
         },
         {
           "id": "intel-i7-gen12-to-gen9",
-          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i7 I7-9700",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1377,7 +1641,7 @@
         },
         {
           "id": "intel-i7-gen12-to-gen10",
-          "label": "Mimic Intel Core i7 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i7 I7-10700",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1389,7 +1653,7 @@
         },
         {
           "id": "intel-i7-gen12-to-gen11",
-          "label": "Mimic Intel Core i7 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i7 I7-11700",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1409,12 +1673,24 @@
         "i7-13",
         "core i7 13",
         "core i7 13th",
-        "i7 13th"
+        "i7 13th",
+        "i713700",
+        "i7-13700",
+        "i7 13700",
+        "13700",
+        "i713700k",
+        "i7-13700k",
+        "i7 13700k",
+        "13700k",
+        "i713700kf",
+        "i7-13700kf",
+        "i7 13700kf",
+        "13700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen13-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1426,7 +1702,7 @@
         },
         {
           "id": "intel-i7-gen13-to-gen7",
-          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i7 I7-7700",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1438,7 +1714,7 @@
         },
         {
           "id": "intel-i7-gen13-to-gen8",
-          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i7 I7-8700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1450,7 +1726,7 @@
         },
         {
           "id": "intel-i7-gen13-to-gen9",
-          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i7 I7-9700",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1462,7 +1738,7 @@
         },
         {
           "id": "intel-i7-gen13-to-gen10",
-          "label": "Mimic Intel Core i7 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i7 I7-10700",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1474,7 +1750,7 @@
         },
         {
           "id": "intel-i7-gen13-to-gen11",
-          "label": "Mimic Intel Core i7 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i7 I7-11700",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1486,7 +1762,7 @@
         },
         {
           "id": "intel-i7-gen13-to-gen12",
-          "label": "Mimic Intel Core i7 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i7 I7-12700",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1506,12 +1782,24 @@
         "i7-14",
         "core i7 14",
         "core i7 14th",
-        "i7 14th"
+        "i7 14th",
+        "i714700",
+        "i7-14700",
+        "i7 14700",
+        "14700",
+        "i714700k",
+        "i7-14700k",
+        "i7 14700k",
+        "14700k",
+        "i714700kf",
+        "i7-14700kf",
+        "i7 14700kf",
+        "14700kf"
       ],
       "targets": [
         {
           "id": "intel-i7-gen14-to-gen6",
-          "label": "Mimic Intel Core i7 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i7 I7-6700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1523,7 +1811,7 @@
         },
         {
           "id": "intel-i7-gen14-to-gen7",
-          "label": "Mimic Intel Core i7 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i7 I7-7700",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1535,7 +1823,7 @@
         },
         {
           "id": "intel-i7-gen14-to-gen8",
-          "label": "Mimic Intel Core i7 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i7 I7-8700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1547,7 +1835,7 @@
         },
         {
           "id": "intel-i7-gen14-to-gen9",
-          "label": "Mimic Intel Core i7 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i7 I7-9700",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1559,7 +1847,7 @@
         },
         {
           "id": "intel-i7-gen14-to-gen10",
-          "label": "Mimic Intel Core i7 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i7 I7-10700",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1571,7 +1859,7 @@
         },
         {
           "id": "intel-i7-gen14-to-gen11",
-          "label": "Mimic Intel Core i7 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i7 I7-11700",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1583,7 +1871,7 @@
         },
         {
           "id": "intel-i7-gen14-to-gen12",
-          "label": "Mimic Intel Core i7 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i7 I7-12700",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1595,7 +1883,7 @@
         },
         {
           "id": "intel-i7-gen14-to-gen13",
-          "label": "Mimic Intel Core i7 13th Gen (Raptor Lake)",
+          "label": "Mimic Intel Core i7 I7-13700",
           "maxFrequencyMHz": 5300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1615,12 +1903,24 @@
         "i9-7",
         "core i9 7",
         "core i9 7th",
-        "i9 7th"
+        "i9 7th",
+        "i97900",
+        "i9-7900",
+        "i9 7900",
+        "7900",
+        "i97900k",
+        "i9-7900k",
+        "i9 7900k",
+        "7900k",
+        "i97900kf",
+        "i9-7900kf",
+        "i9 7900kf",
+        "7900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen7-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1640,12 +1940,24 @@
         "i9-8",
         "core i9 8",
         "core i9 8th",
-        "i9 8th"
+        "i9 8th",
+        "i98900",
+        "i9-8900",
+        "i9 8900",
+        "8900",
+        "i98900k",
+        "i9-8900k",
+        "i9 8900k",
+        "8900k",
+        "i98900kf",
+        "i9-8900kf",
+        "i9 8900kf",
+        "8900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen8-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1657,7 +1969,7 @@
         },
         {
           "id": "intel-i9-gen8-to-gen7",
-          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i9 I9-7900",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1677,12 +1989,24 @@
         "i9-9",
         "core i9 9",
         "core i9 9th",
-        "i9 9th"
+        "i9 9th",
+        "i99900",
+        "i9-9900",
+        "i9 9900",
+        "9900",
+        "i99900k",
+        "i9-9900k",
+        "i9 9900k",
+        "9900k",
+        "i99900kf",
+        "i9-9900kf",
+        "i9 9900kf",
+        "9900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen9-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1694,7 +2018,7 @@
         },
         {
           "id": "intel-i9-gen9-to-gen7",
-          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i9 I9-7900",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1706,7 +2030,7 @@
         },
         {
           "id": "intel-i9-gen9-to-gen8",
-          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i9 I9-8900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1726,12 +2050,24 @@
         "i9-10",
         "core i9 10",
         "core i9 10th",
-        "i9 10th"
+        "i9 10th",
+        "i910900",
+        "i9-10900",
+        "i9 10900",
+        "10900",
+        "i910900k",
+        "i9-10900k",
+        "i9 10900k",
+        "10900k",
+        "i910900kf",
+        "i9-10900kf",
+        "i9 10900kf",
+        "10900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen10-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1743,7 +2079,7 @@
         },
         {
           "id": "intel-i9-gen10-to-gen7",
-          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i9 I9-7900",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1755,7 +2091,7 @@
         },
         {
           "id": "intel-i9-gen10-to-gen8",
-          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i9 I9-8900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1767,7 +2103,7 @@
         },
         {
           "id": "intel-i9-gen10-to-gen9",
-          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i9 I9-9900",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1787,12 +2123,24 @@
         "i9-11",
         "core i9 11",
         "core i9 11th",
-        "i9 11th"
+        "i9 11th",
+        "i911900",
+        "i9-11900",
+        "i9 11900",
+        "11900",
+        "i911900k",
+        "i9-11900k",
+        "i9 11900k",
+        "11900k",
+        "i911900kf",
+        "i9-11900kf",
+        "i9 11900kf",
+        "11900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen11-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1804,7 +2152,7 @@
         },
         {
           "id": "intel-i9-gen11-to-gen7",
-          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i9 I9-7900",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1816,7 +2164,7 @@
         },
         {
           "id": "intel-i9-gen11-to-gen8",
-          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i9 I9-8900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1828,7 +2176,7 @@
         },
         {
           "id": "intel-i9-gen11-to-gen9",
-          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i9 I9-9900",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1840,7 +2188,7 @@
         },
         {
           "id": "intel-i9-gen11-to-gen10",
-          "label": "Mimic Intel Core i9 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i9 I9-10900",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1860,12 +2208,24 @@
         "i9-12",
         "core i9 12",
         "core i9 12th",
-        "i9 12th"
+        "i9 12th",
+        "i912900",
+        "i9-12900",
+        "i9 12900",
+        "12900",
+        "i912900k",
+        "i9-12900k",
+        "i9 12900k",
+        "12900k",
+        "i912900kf",
+        "i9-12900kf",
+        "i9 12900kf",
+        "12900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen12-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1877,7 +2237,7 @@
         },
         {
           "id": "intel-i9-gen12-to-gen7",
-          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i9 I9-7900",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1889,7 +2249,7 @@
         },
         {
           "id": "intel-i9-gen12-to-gen8",
-          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i9 I9-8900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1901,7 +2261,7 @@
         },
         {
           "id": "intel-i9-gen12-to-gen9",
-          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i9 I9-9900",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1913,7 +2273,7 @@
         },
         {
           "id": "intel-i9-gen12-to-gen10",
-          "label": "Mimic Intel Core i9 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i9 I9-10900",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1925,7 +2285,7 @@
         },
         {
           "id": "intel-i9-gen12-to-gen11",
-          "label": "Mimic Intel Core i9 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i9 I9-11900",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1945,12 +2305,24 @@
         "i9-13",
         "core i9 13",
         "core i9 13th",
-        "i9 13th"
+        "i9 13th",
+        "i913900",
+        "i9-13900",
+        "i9 13900",
+        "13900",
+        "i913900k",
+        "i9-13900k",
+        "i9 13900k",
+        "13900k",
+        "i913900kf",
+        "i9-13900kf",
+        "i9 13900kf",
+        "13900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen13-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1962,7 +2334,7 @@
         },
         {
           "id": "intel-i9-gen13-to-gen7",
-          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i9 I9-7900",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1974,7 +2346,7 @@
         },
         {
           "id": "intel-i9-gen13-to-gen8",
-          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i9 I9-8900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1986,7 +2358,7 @@
         },
         {
           "id": "intel-i9-gen13-to-gen9",
-          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i9 I9-9900",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -1998,7 +2370,7 @@
         },
         {
           "id": "intel-i9-gen13-to-gen10",
-          "label": "Mimic Intel Core i9 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i9 I9-10900",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2010,7 +2382,7 @@
         },
         {
           "id": "intel-i9-gen13-to-gen11",
-          "label": "Mimic Intel Core i9 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i9 I9-11900",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2022,7 +2394,7 @@
         },
         {
           "id": "intel-i9-gen13-to-gen12",
-          "label": "Mimic Intel Core i9 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i9 I9-12900",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2042,12 +2414,24 @@
         "i9-14",
         "core i9 14",
         "core i9 14th",
-        "i9 14th"
+        "i9 14th",
+        "i914900",
+        "i9-14900",
+        "i9 14900",
+        "14900",
+        "i914900k",
+        "i9-14900k",
+        "i9 14900k",
+        "14900k",
+        "i914900kf",
+        "i9-14900kf",
+        "i9 14900kf",
+        "14900kf"
       ],
       "targets": [
         {
           "id": "intel-i9-gen14-to-gen6",
-          "label": "Mimic Intel Core i9 6th Gen (Skylake)",
+          "label": "Mimic Intel Core i9 I9-6900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2059,7 +2443,7 @@
         },
         {
           "id": "intel-i9-gen14-to-gen7",
-          "label": "Mimic Intel Core i9 7th Gen (Kaby Lake)",
+          "label": "Mimic Intel Core i9 I9-7900",
           "maxFrequencyMHz": 4100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2071,7 +2455,7 @@
         },
         {
           "id": "intel-i9-gen14-to-gen8",
-          "label": "Mimic Intel Core i9 8th Gen (Coffee Lake)",
+          "label": "Mimic Intel Core i9 I9-8900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2083,7 +2467,7 @@
         },
         {
           "id": "intel-i9-gen14-to-gen9",
-          "label": "Mimic Intel Core i9 9th Gen (Coffee Lake Refresh)",
+          "label": "Mimic Intel Core i9 I9-9900",
           "maxFrequencyMHz": 4500,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2095,7 +2479,7 @@
         },
         {
           "id": "intel-i9-gen14-to-gen10",
-          "label": "Mimic Intel Core i9 10th Gen (Comet Lake)",
+          "label": "Mimic Intel Core i9 I9-10900",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2107,7 +2491,7 @@
         },
         {
           "id": "intel-i9-gen14-to-gen11",
-          "label": "Mimic Intel Core i9 11th Gen (Rocket Lake)",
+          "label": "Mimic Intel Core i9 I9-11900",
           "maxFrequencyMHz": 4900,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2119,7 +2503,7 @@
         },
         {
           "id": "intel-i9-gen14-to-gen12",
-          "label": "Mimic Intel Core i9 12th Gen (Alder Lake)",
+          "label": "Mimic Intel Core i9 I9-12900",
           "maxFrequencyMHz": 5100,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2131,7 +2515,7 @@
         },
         {
           "id": "intel-i9-gen14-to-gen13",
-          "label": "Mimic Intel Core i9 13th Gen (Raptor Lake)",
+          "label": "Mimic Intel Core i9 I9-13900",
           "maxFrequencyMHz": 5300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2155,12 +2539,15 @@
         "ryzen 3 200",
         "ryzen 3-200",
         "ryzen 3 2000",
-        "ryzen 3-2000"
+        "ryzen 3-2000",
+        "ryzen 3 2200",
+        "ryzen 3-2200",
+        "2200"
       ],
       "targets": [
         {
           "id": "amd-ryzen3-2000-to-1000",
-          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "label": "Mimic Ryzen 3 1200",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2184,12 +2571,15 @@
         "ryzen 3 300",
         "ryzen 3-300",
         "ryzen 3 3000",
-        "ryzen 3-3000"
+        "ryzen 3-3000",
+        "ryzen 3 3200",
+        "ryzen 3-3200",
+        "3200"
       ],
       "targets": [
         {
           "id": "amd-ryzen3-3000-to-2000",
-          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 3 2200",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2201,7 +2591,7 @@
         },
         {
           "id": "amd-ryzen3-3000-to-1000",
-          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "label": "Mimic Ryzen 3 1200",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2225,12 +2615,15 @@
         "ryzen 3 400",
         "ryzen 3-400",
         "ryzen 3 4000",
-        "ryzen 3-4000"
+        "ryzen 3-4000",
+        "ryzen 3 4200",
+        "ryzen 3-4200",
+        "4200"
       ],
       "targets": [
         {
           "id": "amd-ryzen3-4000-to-3000",
-          "label": "Mimic Ryzen 3 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 3 3200",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2242,7 +2635,7 @@
         },
         {
           "id": "amd-ryzen3-4000-to-2000",
-          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 3 2200",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2254,7 +2647,7 @@
         },
         {
           "id": "amd-ryzen3-4000-to-1000",
-          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "label": "Mimic Ryzen 3 1200",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2278,12 +2671,15 @@
         "ryzen 3 500",
         "ryzen 3-500",
         "ryzen 3 5000",
-        "ryzen 3-5000"
+        "ryzen 3-5000",
+        "ryzen 3 5200",
+        "ryzen 3-5200",
+        "5200"
       ],
       "targets": [
         {
           "id": "amd-ryzen3-5000-to-4000",
-          "label": "Mimic Ryzen 3 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 3 4200",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2295,7 +2691,7 @@
         },
         {
           "id": "amd-ryzen3-5000-to-3000",
-          "label": "Mimic Ryzen 3 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 3 3200",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2307,7 +2703,7 @@
         },
         {
           "id": "amd-ryzen3-5000-to-2000",
-          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 3 2200",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2319,7 +2715,7 @@
         },
         {
           "id": "amd-ryzen3-5000-to-1000",
-          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "label": "Mimic Ryzen 3 1200",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2343,12 +2739,15 @@
         "ryzen 3 700",
         "ryzen 3-700",
         "ryzen 3 7000",
-        "ryzen 3-7000"
+        "ryzen 3-7000",
+        "ryzen 3 7200",
+        "ryzen 3-7200",
+        "7200"
       ],
       "targets": [
         {
           "id": "amd-ryzen3-7000-to-5000",
-          "label": "Mimic Ryzen 3 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 3 5200",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2360,7 +2759,7 @@
         },
         {
           "id": "amd-ryzen3-7000-to-4000",
-          "label": "Mimic Ryzen 3 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 3 4200",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2372,7 +2771,7 @@
         },
         {
           "id": "amd-ryzen3-7000-to-3000",
-          "label": "Mimic Ryzen 3 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 3 3200",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2384,7 +2783,7 @@
         },
         {
           "id": "amd-ryzen3-7000-to-2000",
-          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 3 2200",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2396,7 +2795,7 @@
         },
         {
           "id": "amd-ryzen3-7000-to-1000",
-          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "label": "Mimic Ryzen 3 1200",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2420,12 +2819,15 @@
         "ryzen 3 800",
         "ryzen 3-800",
         "ryzen 3 8000",
-        "ryzen 3-8000"
+        "ryzen 3-8000",
+        "ryzen 3 8200",
+        "ryzen 3-8200",
+        "8200"
       ],
       "targets": [
         {
           "id": "amd-ryzen3-8000-to-7000",
-          "label": "Mimic Ryzen 3 7th Gen (Zen 4)",
+          "label": "Mimic Ryzen 3 7200",
           "maxFrequencyMHz": 5200,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2437,7 +2839,7 @@
         },
         {
           "id": "amd-ryzen3-8000-to-5000",
-          "label": "Mimic Ryzen 3 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 3 5200",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2449,7 +2851,7 @@
         },
         {
           "id": "amd-ryzen3-8000-to-4000",
-          "label": "Mimic Ryzen 3 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 3 4200",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2461,7 +2863,7 @@
         },
         {
           "id": "amd-ryzen3-8000-to-3000",
-          "label": "Mimic Ryzen 3 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 3 3200",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2473,7 +2875,7 @@
         },
         {
           "id": "amd-ryzen3-8000-to-2000",
-          "label": "Mimic Ryzen 3 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 3 2200",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2485,7 +2887,7 @@
         },
         {
           "id": "amd-ryzen3-8000-to-1000",
-          "label": "Mimic Ryzen 3 1st Gen (Zen)",
+          "label": "Mimic Ryzen 3 1200",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2509,12 +2911,18 @@
         "ryzen 5 200",
         "ryzen 5-200",
         "ryzen 5 2000",
-        "ryzen 5-2000"
+        "ryzen 5-2000",
+        "ryzen 5 2600",
+        "ryzen 5-2600",
+        "2600",
+        "ryzen 5 2600x",
+        "ryzen 5-2600x",
+        "2600x"
       ],
       "targets": [
         {
           "id": "amd-ryzen5-2000-to-1000",
-          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "label": "Mimic Ryzen 5 1600",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2538,12 +2946,18 @@
         "ryzen 5 300",
         "ryzen 5-300",
         "ryzen 5 3000",
-        "ryzen 5-3000"
+        "ryzen 5-3000",
+        "ryzen 5 3600",
+        "ryzen 5-3600",
+        "3600",
+        "ryzen 5 3600x",
+        "ryzen 5-3600x",
+        "3600x"
       ],
       "targets": [
         {
           "id": "amd-ryzen5-3000-to-2000",
-          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 5 2600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2555,7 +2969,7 @@
         },
         {
           "id": "amd-ryzen5-3000-to-1000",
-          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "label": "Mimic Ryzen 5 1600",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2579,12 +2993,18 @@
         "ryzen 5 400",
         "ryzen 5-400",
         "ryzen 5 4000",
-        "ryzen 5-4000"
+        "ryzen 5-4000",
+        "ryzen 5 4600",
+        "ryzen 5-4600",
+        "4600",
+        "ryzen 5 4600x",
+        "ryzen 5-4600x",
+        "4600x"
       ],
       "targets": [
         {
           "id": "amd-ryzen5-4000-to-3000",
-          "label": "Mimic Ryzen 5 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 5 3600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2596,7 +3016,7 @@
         },
         {
           "id": "amd-ryzen5-4000-to-2000",
-          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 5 2600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2608,7 +3028,7 @@
         },
         {
           "id": "amd-ryzen5-4000-to-1000",
-          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "label": "Mimic Ryzen 5 1600",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2632,12 +3052,18 @@
         "ryzen 5 500",
         "ryzen 5-500",
         "ryzen 5 5000",
-        "ryzen 5-5000"
+        "ryzen 5-5000",
+        "ryzen 5 5600",
+        "ryzen 5-5600",
+        "5600",
+        "ryzen 5 5600x",
+        "ryzen 5-5600x",
+        "5600x"
       ],
       "targets": [
         {
           "id": "amd-ryzen5-5000-to-4000",
-          "label": "Mimic Ryzen 5 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 5 4600",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2649,7 +3075,7 @@
         },
         {
           "id": "amd-ryzen5-5000-to-3000",
-          "label": "Mimic Ryzen 5 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 5 3600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2661,7 +3087,7 @@
         },
         {
           "id": "amd-ryzen5-5000-to-2000",
-          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 5 2600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2673,7 +3099,7 @@
         },
         {
           "id": "amd-ryzen5-5000-to-1000",
-          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "label": "Mimic Ryzen 5 1600",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2697,12 +3123,18 @@
         "ryzen 5 700",
         "ryzen 5-700",
         "ryzen 5 7000",
-        "ryzen 5-7000"
+        "ryzen 5-7000",
+        "ryzen 5 7600",
+        "ryzen 5-7600",
+        "7600",
+        "ryzen 5 7600x",
+        "ryzen 5-7600x",
+        "7600x"
       ],
       "targets": [
         {
           "id": "amd-ryzen5-7000-to-5000",
-          "label": "Mimic Ryzen 5 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 5 5600",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2714,7 +3146,7 @@
         },
         {
           "id": "amd-ryzen5-7000-to-4000",
-          "label": "Mimic Ryzen 5 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 5 4600",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2726,7 +3158,7 @@
         },
         {
           "id": "amd-ryzen5-7000-to-3000",
-          "label": "Mimic Ryzen 5 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 5 3600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2738,7 +3170,7 @@
         },
         {
           "id": "amd-ryzen5-7000-to-2000",
-          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 5 2600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2750,7 +3182,7 @@
         },
         {
           "id": "amd-ryzen5-7000-to-1000",
-          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "label": "Mimic Ryzen 5 1600",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2774,12 +3206,18 @@
         "ryzen 5 800",
         "ryzen 5-800",
         "ryzen 5 8000",
-        "ryzen 5-8000"
+        "ryzen 5-8000",
+        "ryzen 5 8600",
+        "ryzen 5-8600",
+        "8600",
+        "ryzen 5 8600x",
+        "ryzen 5-8600x",
+        "8600x"
       ],
       "targets": [
         {
           "id": "amd-ryzen5-8000-to-7000",
-          "label": "Mimic Ryzen 5 7th Gen (Zen 4)",
+          "label": "Mimic Ryzen 5 7600",
           "maxFrequencyMHz": 5200,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2791,7 +3229,7 @@
         },
         {
           "id": "amd-ryzen5-8000-to-5000",
-          "label": "Mimic Ryzen 5 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 5 5600",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2803,7 +3241,7 @@
         },
         {
           "id": "amd-ryzen5-8000-to-4000",
-          "label": "Mimic Ryzen 5 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 5 4600",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2815,7 +3253,7 @@
         },
         {
           "id": "amd-ryzen5-8000-to-3000",
-          "label": "Mimic Ryzen 5 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 5 3600",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2827,7 +3265,7 @@
         },
         {
           "id": "amd-ryzen5-8000-to-2000",
-          "label": "Mimic Ryzen 5 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 5 2600",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2839,7 +3277,7 @@
         },
         {
           "id": "amd-ryzen5-8000-to-1000",
-          "label": "Mimic Ryzen 5 1st Gen (Zen)",
+          "label": "Mimic Ryzen 5 1600",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2863,12 +3301,21 @@
         "ryzen 7 200",
         "ryzen 7-200",
         "ryzen 7 2000",
-        "ryzen 7-2000"
+        "ryzen 7-2000",
+        "ryzen 7 2700",
+        "ryzen 7-2700",
+        "2700",
+        "ryzen 7 2700x",
+        "ryzen 7-2700x",
+        "2700x",
+        "ryzen 7 2700xt",
+        "ryzen 7-2700xt",
+        "2700xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen7-2000-to-1000",
-          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "label": "Mimic Ryzen 7 1700",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2892,12 +3339,21 @@
         "ryzen 7 300",
         "ryzen 7-300",
         "ryzen 7 3000",
-        "ryzen 7-3000"
+        "ryzen 7-3000",
+        "ryzen 7 3700",
+        "ryzen 7-3700",
+        "3700",
+        "ryzen 7 3700x",
+        "ryzen 7-3700x",
+        "3700x",
+        "ryzen 7 3700xt",
+        "ryzen 7-3700xt",
+        "3700xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen7-3000-to-2000",
-          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 7 2700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2909,7 +3365,7 @@
         },
         {
           "id": "amd-ryzen7-3000-to-1000",
-          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "label": "Mimic Ryzen 7 1700",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2933,12 +3389,21 @@
         "ryzen 7 400",
         "ryzen 7-400",
         "ryzen 7 4000",
-        "ryzen 7-4000"
+        "ryzen 7-4000",
+        "ryzen 7 4700",
+        "ryzen 7-4700",
+        "4700",
+        "ryzen 7 4700x",
+        "ryzen 7-4700x",
+        "4700x",
+        "ryzen 7 4700xt",
+        "ryzen 7-4700xt",
+        "4700xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen7-4000-to-3000",
-          "label": "Mimic Ryzen 7 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 7 3700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2950,7 +3415,7 @@
         },
         {
           "id": "amd-ryzen7-4000-to-2000",
-          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 7 2700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2962,7 +3427,7 @@
         },
         {
           "id": "amd-ryzen7-4000-to-1000",
-          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "label": "Mimic Ryzen 7 1700",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -2986,12 +3451,21 @@
         "ryzen 7 500",
         "ryzen 7-500",
         "ryzen 7 5000",
-        "ryzen 7-5000"
+        "ryzen 7-5000",
+        "ryzen 7 5700",
+        "ryzen 7-5700",
+        "5700",
+        "ryzen 7 5700x",
+        "ryzen 7-5700x",
+        "5700x",
+        "ryzen 7 5700xt",
+        "ryzen 7-5700xt",
+        "5700xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen7-5000-to-4000",
-          "label": "Mimic Ryzen 7 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 7 4700",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3003,7 +3477,7 @@
         },
         {
           "id": "amd-ryzen7-5000-to-3000",
-          "label": "Mimic Ryzen 7 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 7 3700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3015,7 +3489,7 @@
         },
         {
           "id": "amd-ryzen7-5000-to-2000",
-          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 7 2700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3027,7 +3501,7 @@
         },
         {
           "id": "amd-ryzen7-5000-to-1000",
-          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "label": "Mimic Ryzen 7 1700",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3051,12 +3525,21 @@
         "ryzen 7 700",
         "ryzen 7-700",
         "ryzen 7 7000",
-        "ryzen 7-7000"
+        "ryzen 7-7000",
+        "ryzen 7 7700",
+        "ryzen 7-7700",
+        "7700",
+        "ryzen 7 7700x",
+        "ryzen 7-7700x",
+        "7700x",
+        "ryzen 7 7700xt",
+        "ryzen 7-7700xt",
+        "7700xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen7-7000-to-5000",
-          "label": "Mimic Ryzen 7 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 7 5700",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3068,7 +3551,7 @@
         },
         {
           "id": "amd-ryzen7-7000-to-4000",
-          "label": "Mimic Ryzen 7 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 7 4700",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3080,7 +3563,7 @@
         },
         {
           "id": "amd-ryzen7-7000-to-3000",
-          "label": "Mimic Ryzen 7 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 7 3700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3092,7 +3575,7 @@
         },
         {
           "id": "amd-ryzen7-7000-to-2000",
-          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 7 2700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3104,7 +3587,7 @@
         },
         {
           "id": "amd-ryzen7-7000-to-1000",
-          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "label": "Mimic Ryzen 7 1700",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3128,12 +3611,21 @@
         "ryzen 7 800",
         "ryzen 7-800",
         "ryzen 7 8000",
-        "ryzen 7-8000"
+        "ryzen 7-8000",
+        "ryzen 7 8700",
+        "ryzen 7-8700",
+        "8700",
+        "ryzen 7 8700x",
+        "ryzen 7-8700x",
+        "8700x",
+        "ryzen 7 8700xt",
+        "ryzen 7-8700xt",
+        "8700xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen7-8000-to-7000",
-          "label": "Mimic Ryzen 7 7th Gen (Zen 4)",
+          "label": "Mimic Ryzen 7 7700",
           "maxFrequencyMHz": 5200,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3145,7 +3637,7 @@
         },
         {
           "id": "amd-ryzen7-8000-to-5000",
-          "label": "Mimic Ryzen 7 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 7 5700",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3157,7 +3649,7 @@
         },
         {
           "id": "amd-ryzen7-8000-to-4000",
-          "label": "Mimic Ryzen 7 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 7 4700",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3169,7 +3661,7 @@
         },
         {
           "id": "amd-ryzen7-8000-to-3000",
-          "label": "Mimic Ryzen 7 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 7 3700",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3181,7 +3673,7 @@
         },
         {
           "id": "amd-ryzen7-8000-to-2000",
-          "label": "Mimic Ryzen 7 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 7 2700",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3193,7 +3685,7 @@
         },
         {
           "id": "amd-ryzen7-8000-to-1000",
-          "label": "Mimic Ryzen 7 1st Gen (Zen)",
+          "label": "Mimic Ryzen 7 1700",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3217,12 +3709,21 @@
         "ryzen 9 200",
         "ryzen 9-200",
         "ryzen 9 2000",
-        "ryzen 9-2000"
+        "ryzen 9-2000",
+        "ryzen 9 2900",
+        "ryzen 9-2900",
+        "2900",
+        "ryzen 9 2900x",
+        "ryzen 9-2900x",
+        "2900x",
+        "ryzen 9 2900xt",
+        "ryzen 9-2900xt",
+        "2900xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen9-2000-to-1000",
-          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "label": "Mimic Ryzen 9 1900",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3246,12 +3747,21 @@
         "ryzen 9 300",
         "ryzen 9-300",
         "ryzen 9 3000",
-        "ryzen 9-3000"
+        "ryzen 9-3000",
+        "ryzen 9 3900",
+        "ryzen 9-3900",
+        "3900",
+        "ryzen 9 3900x",
+        "ryzen 9-3900x",
+        "3900x",
+        "ryzen 9 3900xt",
+        "ryzen 9-3900xt",
+        "3900xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen9-3000-to-2000",
-          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 9 2900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3263,7 +3773,7 @@
         },
         {
           "id": "amd-ryzen9-3000-to-1000",
-          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "label": "Mimic Ryzen 9 1900",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3287,12 +3797,21 @@
         "ryzen 9 400",
         "ryzen 9-400",
         "ryzen 9 4000",
-        "ryzen 9-4000"
+        "ryzen 9-4000",
+        "ryzen 9 4900",
+        "ryzen 9-4900",
+        "4900",
+        "ryzen 9 4900x",
+        "ryzen 9-4900x",
+        "4900x",
+        "ryzen 9 4900xt",
+        "ryzen 9-4900xt",
+        "4900xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen9-4000-to-3000",
-          "label": "Mimic Ryzen 9 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 9 3900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3304,7 +3823,7 @@
         },
         {
           "id": "amd-ryzen9-4000-to-2000",
-          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 9 2900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3316,7 +3835,7 @@
         },
         {
           "id": "amd-ryzen9-4000-to-1000",
-          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "label": "Mimic Ryzen 9 1900",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3340,12 +3859,21 @@
         "ryzen 9 500",
         "ryzen 9-500",
         "ryzen 9 5000",
-        "ryzen 9-5000"
+        "ryzen 9-5000",
+        "ryzen 9 5900",
+        "ryzen 9-5900",
+        "5900",
+        "ryzen 9 5900x",
+        "ryzen 9-5900x",
+        "5900x",
+        "ryzen 9 5900xt",
+        "ryzen 9-5900xt",
+        "5900xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen9-5000-to-4000",
-          "label": "Mimic Ryzen 9 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 9 4900",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3357,7 +3885,7 @@
         },
         {
           "id": "amd-ryzen9-5000-to-3000",
-          "label": "Mimic Ryzen 9 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 9 3900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3369,7 +3897,7 @@
         },
         {
           "id": "amd-ryzen9-5000-to-2000",
-          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 9 2900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3381,7 +3909,7 @@
         },
         {
           "id": "amd-ryzen9-5000-to-1000",
-          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "label": "Mimic Ryzen 9 1900",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3405,12 +3933,21 @@
         "ryzen 9 700",
         "ryzen 9-700",
         "ryzen 9 7000",
-        "ryzen 9-7000"
+        "ryzen 9-7000",
+        "ryzen 9 7900",
+        "ryzen 9-7900",
+        "7900",
+        "ryzen 9 7900x",
+        "ryzen 9-7900x",
+        "7900x",
+        "ryzen 9 7900xt",
+        "ryzen 9-7900xt",
+        "7900xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen9-7000-to-5000",
-          "label": "Mimic Ryzen 9 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 9 5900",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3422,7 +3959,7 @@
         },
         {
           "id": "amd-ryzen9-7000-to-4000",
-          "label": "Mimic Ryzen 9 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 9 4900",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3434,7 +3971,7 @@
         },
         {
           "id": "amd-ryzen9-7000-to-3000",
-          "label": "Mimic Ryzen 9 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 9 3900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3446,7 +3983,7 @@
         },
         {
           "id": "amd-ryzen9-7000-to-2000",
-          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 9 2900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3458,7 +3995,7 @@
         },
         {
           "id": "amd-ryzen9-7000-to-1000",
-          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "label": "Mimic Ryzen 9 1900",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3482,12 +4019,21 @@
         "ryzen 9 800",
         "ryzen 9-800",
         "ryzen 9 8000",
-        "ryzen 9-8000"
+        "ryzen 9-8000",
+        "ryzen 9 8900",
+        "ryzen 9-8900",
+        "8900",
+        "ryzen 9 8900x",
+        "ryzen 9-8900x",
+        "8900x",
+        "ryzen 9 8900xt",
+        "ryzen 9-8900xt",
+        "8900xt"
       ],
       "targets": [
         {
           "id": "amd-ryzen9-8000-to-7000",
-          "label": "Mimic Ryzen 9 7th Gen (Zen 4)",
+          "label": "Mimic Ryzen 9 7900",
           "maxFrequencyMHz": 5200,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3499,7 +4045,7 @@
         },
         {
           "id": "amd-ryzen9-8000-to-5000",
-          "label": "Mimic Ryzen 9 5th Gen (Zen 3)",
+          "label": "Mimic Ryzen 9 5900",
           "maxFrequencyMHz": 4700,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3511,7 +4057,7 @@
         },
         {
           "id": "amd-ryzen9-8000-to-4000",
-          "label": "Mimic Ryzen 9 4th Gen (Zen 2 Mobile)",
+          "label": "Mimic Ryzen 9 4900",
           "maxFrequencyMHz": 4400,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3523,7 +4069,7 @@
         },
         {
           "id": "amd-ryzen9-8000-to-3000",
-          "label": "Mimic Ryzen 9 3rd Gen (Zen 2)",
+          "label": "Mimic Ryzen 9 3900",
           "maxFrequencyMHz": 4300,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3535,7 +4081,7 @@
         },
         {
           "id": "amd-ryzen9-8000-to-2000",
-          "label": "Mimic Ryzen 9 2nd Gen (Zen+)",
+          "label": "Mimic Ryzen 9 2900",
           "maxFrequencyMHz": 4000,
           "maxCores": 0,
           "maxThreads": 0,
@@ -3547,7 +4093,7 @@
         },
         {
           "id": "amd-ryzen9-8000-to-1000",
-          "label": "Mimic Ryzen 9 1st Gen (Zen)",
+          "label": "Mimic Ryzen 9 1900",
           "maxFrequencyMHz": 3800,
           "maxCores": 0,
           "maxThreads": 0,

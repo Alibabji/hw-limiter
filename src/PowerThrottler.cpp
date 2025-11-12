@@ -2,6 +2,7 @@
 
 #include <sstream>
 #include <string>
+#include <vector>
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -29,30 +30,34 @@ std::wstring ToWide(const std::string& value) {
 ThrottleResult PowerThrottler::ApplyCpuTarget(const CpuThrottleTarget& target) {
 #ifdef _WIN32
     auto maxPercent = target.maxPercent > 0 ? target.maxPercent : 100;
-    auto cmdMax = L"powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMAX " +
-                  std::to_wstring(maxPercent);
-    auto result = RunCommand(cmdMax);
-    if (!result.success) {
-        return result;
-    }
+    std::vector<std::wstring> commands;
+    auto percentStr = std::to_wstring(maxPercent);
+    commands.push_back(L"powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMAX " + percentStr);
+    commands.push_back(L"powercfg /setdcvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMAX " + percentStr);
+    commands.push_back(L"powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMIN " + percentStr);
+    commands.push_back(L"powercfg /setdcvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMIN " + percentStr);
+    commands.push_back(L"powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3");
+    commands.push_back(L"powercfg /setdcvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 3");
 
-    std::wstring freqCmd;
     if (target.maxFrequencyMHz > 0) {
-        freqCmd = L"powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCFREQMAX " +
-                  std::to_wstring(target.maxFrequencyMHz);
-        result = RunCommand(freqCmd);
-        if (!result.success) {
-            return result;
-        }
+        auto freqStr = std::to_wstring(target.maxFrequencyMHz);
+        commands.push_back(L"powercfg /setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCFREQMAX " + freqStr);
+        commands.push_back(L"powercfg /setdcvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCFREQMAX " + freqStr);
     }
 
     for (const auto& extra : target.extraCommands) {
-        result = RunCommand(ToWide(extra));
-        if (!result.success) {
-            return result;
+        commands.push_back(ToWide(extra));
+    }
+    commands.push_back(L"powercfg /setactive SCHEME_CURRENT");
+
+    ThrottleResult result;
+    result.success = true;
+    for (const auto& cmd : commands) {
+        auto step = RunCommand(cmd);
+        if (!step.success) {
+            return step;
         }
     }
-
     result.message = L"CPU target applied";
     return result;
 #else
@@ -65,19 +70,22 @@ ThrottleResult PowerThrottler::ApplyGpuTarget(const GpuThrottleTarget& target) {
     if (target.nvidiaSmiArgs.empty()) {
         return {false, L"No GPU commands defined for this target"};
     }
-    std::wstring args;
-    for (size_t i = 0; i < target.nvidiaSmiArgs.size(); ++i) {
-        if (i > 0) {
-            args += L" ";
+    std::vector<std::wstring> commands;
+    commands.push_back(L"nvidia-smi -i 0 -pm 1");
+    std::wstring args = L"-i 0";
+    for (const auto& part : target.nvidiaSmiArgs) {
+        args += L" ";
+        args += ToWide(part);
+    }
+    commands.push_back(L"nvidia-smi " + args);
+
+    for (const auto& cmd : commands) {
+        auto step = RunCommand(cmd);
+        if (!step.success) {
+            return step;
         }
-        args += ToWide(target.nvidiaSmiArgs[i]);
     }
-    auto command = BuildCommand(L"nvidia-smi", args);
-    auto result = RunCommand(command);
-    if (result.success) {
-        result.message = L"GPU target applied";
-    }
-    return result;
+    return {true, L"GPU target applied"};
 #else
     return {false, L"GPU throttling is only supported on Windows"};
 #endif
