@@ -1013,6 +1013,7 @@ CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o: H
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
   /Users/nickjeong/projects/hw-limiter/include/AppState.hpp \
+  /Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp \
   /Users/nickjeong/projects/hw-limiter/include/HardwareInfo.hpp \
   /Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp \
   /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp \
@@ -2228,6 +2229,7 @@ CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o: /Users/nickjeong/proje
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
   /Users/nickjeong/projects/hw-limiter/include/AppState.hpp \
   /Users/nickjeong/projects/hw-limiter/include/BenchmarkRunner.hpp \
+  /Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp \
   /Users/nickjeong/projects/hw-limiter/include/HardwareInfo.hpp \
   /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp \
   /Users/nickjeong/projects/hw-limiter/include/ProfileEngine.hpp \
@@ -4203,6 +4205,7 @@ CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.o: /Users/nickjeong/projects/h
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
   /Users/nickjeong/projects/hw-limiter/include/AppState.hpp \
   /Users/nickjeong/projects/hw-limiter/include/BenchmarkRunner.hpp \
+  /Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp \
   /Users/nickjeong/projects/hw-limiter/include/HardwareInfo.hpp \
   /Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp \
   /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp \
@@ -8313,6 +8316,7 @@ CMakeFiles/HardwareLimiter.dir/src/main.cpp.o: /Users/nickjeong/projects/hw-limi
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
   /Users/nickjeong/projects/hw-limiter/include/AppState.hpp \
+  /Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp \
   /Users/nickjeong/projects/hw-limiter/include/HardwareInfo.hpp \
   /Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp \
   /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp \
@@ -8831,6 +8835,8 @@ HardwareLimiter_autogen/6YEA5652QU/moc_MainWindow.cpp:
 /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp:
 
 /Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp:
+
+/Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h:
 

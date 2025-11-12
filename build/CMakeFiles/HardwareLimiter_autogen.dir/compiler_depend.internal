@@ -936,6 +936,7 @@
  /Users/nickjeong/projects/hw-limiter/build/CMakeFiles/4.1.2/CMakeSystem.cmake
  /Users/nickjeong/projects/hw-limiter/build/HardwareLimiter_autogen/moc_predefs.h
  /Users/nickjeong/projects/hw-limiter/include/AppState.hpp
+ /Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp
  /Users/nickjeong/projects/hw-limiter/include/HardwareInfo.hpp
  /Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp
  /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp

@@ -40,8 +40,14 @@ BenchmarkReport BenchmarkRunner::Run(const HardwareSnapshot& snapshot) const {
 
 std::optional<BenchmarkResultData> BenchmarkRunner::RunCpuBenchmark(const HardwareSnapshot& snapshot) const {
     using namespace std::chrono;
-    const unsigned threads = std::max(1u, snapshot.cpu.logicalCores == 0 ? std::thread::hardware_concurrency()
-                                                                         : snapshot.cpu.logicalCores);
+    unsigned threadCount = snapshot.cpu.logicalCores;
+    if (threadCount == 0) {
+        threadCount = std::thread::hardware_concurrency();
+    }
+    if (threadCount == 0) {
+        threadCount = 1;
+    }
+    const unsigned threads = threadCount;
     const size_t elements = 1 << 18;  // 262k elements
     const int iterations = 200;
 

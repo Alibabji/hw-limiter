@@ -935,6 +935,7 @@ HardwareLimiter_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Pl
   CMakeFiles/4.1.2/CMakeSystem.cmake \
   HardwareLimiter_autogen/moc_predefs.h \
   /Users/nickjeong/projects/hw-limiter/include/AppState.hpp \
+  /Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp \
   /Users/nickjeong/projects/hw-limiter/include/HardwareInfo.hpp \
   /Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp \
   /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp \
@@ -1773,8 +1774,6 @@ HardwareLimiter_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Pl
 
 /opt/homebrew/Cellar/qtbase/6.9.3/lib/QtCore.framework/Versions/A/Headers/qtcore-config.h:
 
-/opt/homebrew/Cellar/qtbase/6.9.3/lib/QtCore.framework/Versions/A/Headers/qtconfigmacros.h:
-
 /opt/homebrew/Cellar/qtbase/6.9.3/lib/QtCore.framework/Versions/A/Headers/qtaggedpointer.h:
 
 /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
@@ -1940,6 +1939,10 @@ HardwareLimiter_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Pl
 /Users/nickjeong/projects/hw-limiter/include/PowerThrottler.hpp:
 
 /Users/nickjeong/projects/hw-limiter/include/MainWindow.hpp:
+
+/opt/homebrew/Cellar/qtbase/6.9.3/lib/QtCore.framework/Versions/A/Headers/qtconfigmacros.h:
+
+/Users/nickjeong/projects/hw-limiter/include/BenchmarkTypes.hpp:
 
 CMakeFiles/4.1.2/CMakeSystem.cmake:
 
