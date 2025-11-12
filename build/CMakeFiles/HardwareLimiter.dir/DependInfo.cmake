@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/nickjeong/projects/hw-limiter/build/HardwareLimiter_autogen/mocs_compilation.cpp" "CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o.d"
+  "/Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp" "CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o" "gcc" "CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o.d"
   "/Users/nickjeong/projects/hw-limiter/src/HardwareInfo.cpp" "CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o" "gcc" "CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o.d"
   "/Users/nickjeong/projects/hw-limiter/src/MainWindow.cpp" "CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.o" "gcc" "CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.o.d"
   "/Users/nickjeong/projects/hw-limiter/src/PowerThrottler.cpp" "CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o" "gcc" "CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o.d"

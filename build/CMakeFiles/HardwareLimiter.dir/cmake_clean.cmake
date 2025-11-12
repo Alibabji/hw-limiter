@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "HardwareLimiter_autogen"
   "CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o"
+  "CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o.d"
   "CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o"
   "CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o.d"
   "CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.o"

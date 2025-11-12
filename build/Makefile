@@ -192,6 +192,30 @@ HardwareLimiter_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.s
 .PHONY : HardwareLimiter_autogen/mocs_compilation.cpp.s
 
+src/BenchmarkRunner.o: src/BenchmarkRunner.cpp.o
+.PHONY : src/BenchmarkRunner.o
+
+# target to build an object file
+src/BenchmarkRunner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o
+.PHONY : src/BenchmarkRunner.cpp.o
+
+src/BenchmarkRunner.i: src/BenchmarkRunner.cpp.i
+.PHONY : src/BenchmarkRunner.i
+
+# target to preprocess a source file
+src/BenchmarkRunner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.i
+.PHONY : src/BenchmarkRunner.cpp.i
+
+src/BenchmarkRunner.s: src/BenchmarkRunner.cpp.s
+.PHONY : src/BenchmarkRunner.s
+
+# target to generate assembly for a file
+src/BenchmarkRunner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HardwareLimiter.dir/build.make CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.s
+.PHONY : src/BenchmarkRunner.cpp.s
+
 src/HardwareInfo.o: src/HardwareInfo.cpp.o
 .PHONY : src/HardwareInfo.o
 
@@ -351,6 +375,9 @@ help:
 	@echo "... HardwareLimiter_autogen/mocs_compilation.o"
 	@echo "... HardwareLimiter_autogen/mocs_compilation.i"
 	@echo "... HardwareLimiter_autogen/mocs_compilation.s"
+	@echo "... src/BenchmarkRunner.o"
+	@echo "... src/BenchmarkRunner.i"
+	@echo "... src/BenchmarkRunner.s"
 	@echo "... src/HardwareInfo.o"
 	@echo "... src/HardwareInfo.i"
 	@echo "... src/HardwareInfo.s"

@@ -468,6 +468,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/nickjeong/projects/hw-limiter/src/HardwareInfo.cpp",
 			"MU",
 			null

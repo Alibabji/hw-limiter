@@ -24,6 +24,7 @@ struct CpuProfile {
     std::string label;
     std::vector<std::string> matchTokens;
     std::vector<CpuThrottleTarget> targets;
+    int nominalFrequencyMHz = 0;
 };
 
 struct GpuThrottleTarget {
@@ -40,6 +41,8 @@ struct GpuProfile {
     std::string label;
     std::vector<std::string> matchTokens;
     std::vector<GpuThrottleTarget> targets;
+    int nominalFrequencyMHz = 0;
+    int nominalPowerWatts = 0;
 };
 
 struct ProfileDatabase {

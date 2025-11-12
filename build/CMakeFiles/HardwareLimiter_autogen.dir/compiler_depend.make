@@ -941,6 +941,7 @@ HardwareLimiter_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Pl
   /Users/nickjeong/projects/hw-limiter/include/ProfileEngine.hpp \
   /Users/nickjeong/projects/hw-limiter/include/ProfileLoader.hpp \
   /Users/nickjeong/projects/hw-limiter/include/SimpleJson.hpp \
+  /Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp \
   /Users/nickjeong/projects/hw-limiter/src/HardwareInfo.cpp \
   /Users/nickjeong/projects/hw-limiter/src/MainWindow.cpp \
   /Users/nickjeong/projects/hw-limiter/src/PowerThrottler.cpp \
@@ -1927,6 +1928,8 @@ HardwareLimiter_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Pl
 /Users/nickjeong/projects/hw-limiter/src/ProfileEngine.cpp:
 
 /Users/nickjeong/projects/hw-limiter/src/MainWindow.cpp:
+
+/Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp:
 
 /Users/nickjeong/projects/hw-limiter/include/SimpleJson.hpp:
 

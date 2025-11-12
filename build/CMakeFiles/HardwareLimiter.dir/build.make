@@ -114,10 +114,24 @@ CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nickjeong/projects/hw-limiter/src/MainWindow.cpp -o CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.s
 
+CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o: CMakeFiles/HardwareLimiter.dir/flags.make
+CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o: /Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp
+CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o: CMakeFiles/HardwareLimiter.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o -MF CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o.d -o CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o -c /Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp
+
+CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp > CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.i
+
+CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nickjeong/projects/hw-limiter/src/BenchmarkRunner.cpp -o CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.s
+
 CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o: CMakeFiles/HardwareLimiter.dir/flags.make
 CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o: /Users/nickjeong/projects/hw-limiter/src/HardwareInfo.cpp
 CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o: CMakeFiles/HardwareLimiter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o -MF CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o.d -o CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o -c /Users/nickjeong/projects/hw-limiter/src/HardwareInfo.cpp
 
 CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.s: cmake_force
 CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o: CMakeFiles/HardwareLimiter.dir/flags.make
 CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o: /Users/nickjeong/projects/hw-limiter/src/ProfileLoader.cpp
 CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o: CMakeFiles/HardwareLimiter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o -MF CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o.d -o CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o -c /Users/nickjeong/projects/hw-limiter/src/ProfileLoader.cpp
 
 CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.s: cmake_force
 CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o: CMakeFiles/HardwareLimiter.dir/flags.make
 CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o: /Users/nickjeong/projects/hw-limiter/src/ProfileEngine.cpp
 CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o: CMakeFiles/HardwareLimiter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o -MF CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o.d -o CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o -c /Users/nickjeong/projects/hw-limiter/src/ProfileEngine.cpp
 
 CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.s: cmake_force
 CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o: CMakeFiles/HardwareLimiter.dir/flags.make
 CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o: /Users/nickjeong/projects/hw-limiter/src/PowerThrottler.cpp
 CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o: CMakeFiles/HardwareLimiter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o -MF CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o.d -o CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.o -c /Users/nickjeong/projects/hw-limiter/src/PowerThrottler.cpp
 
 CMakeFiles/HardwareLimiter.dir/src/PowerThrottler.cpp.i: cmake_force
@@ -175,6 +189,7 @@ HardwareLimiter_OBJECTS = \
 "CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/HardwareLimiter.dir/src/main.cpp.o" \
 "CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.o" \
+"CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o" \
 "CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o" \
 "CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o" \
 "CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o" \
@@ -186,6 +201,7 @@ HardwareLimiter_EXTERNAL_OBJECTS =
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/HardwareLimiter_autogen/mocs_compilation.cpp.o
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/src/main.cpp.o
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/src/MainWindow.cpp.o
+HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/src/BenchmarkRunner.cpp.o
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/src/HardwareInfo.cpp.o
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/src/ProfileLoader.cpp.o
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/src/ProfileEngine.cpp.o
@@ -195,7 +211,7 @@ HardwareLimiter.app/Contents/MacOS/HardwareLimiter: /opt/homebrew/opt/qt/lib/QtW
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: /opt/homebrew/opt/qt/lib/QtGui.framework/Versions/A/QtGui
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: /opt/homebrew/opt/qt/lib/QtCore.framework/Versions/A/QtCore
 HardwareLimiter.app/Contents/MacOS/HardwareLimiter: CMakeFiles/HardwareLimiter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable HardwareLimiter.app/Contents/MacOS/HardwareLimiter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nickjeong/projects/hw-limiter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable HardwareLimiter.app/Contents/MacOS/HardwareLimiter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HardwareLimiter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

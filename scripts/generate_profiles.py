@@ -116,6 +116,7 @@ def intel_cpu_profiles():
                     "label": f"Intel {seg_label} {gen_label}",
                     "matchTokens": tokens,
                     "targets": targets,
+                    "nominalFrequencyMHz": freq,
                 })
     return profiles
 
@@ -154,6 +155,7 @@ def amd_cpu_profiles():
                     "label": f"AMD {seg_label} {series_label}",
                     "matchTokens": tokens,
                     "targets": targets,
+                    "nominalFrequencyMHz": freq,
                 })
     return profiles
 
@@ -195,8 +197,10 @@ def gpu_profiles():
         profiles.append({
             "id": profile_id,
             "label": f"NVIDIA GeForce {name}",
-            "matchTokens": [lower_name, f"geforce {lower_name}", lower_name.replace(" ti", " ti")],
+            "matchTokens": tokens,
             "targets": targets,
+            "nominalFrequencyMHz": freq,
+            "nominalPowerWatts": power,
         })
     return profiles
 

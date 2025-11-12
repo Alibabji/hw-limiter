@@ -18,6 +18,7 @@ find_package(Qt6 COMPONENTS Widgets REQUIRED)
 add_executable(HardwareLimiter WIN32 MACOSX_BUNDLE
     src/main.cpp
     src/MainWindow.cpp
+    src/BenchmarkRunner.cpp
     src/HardwareInfo.cpp
     src/ProfileLoader.cpp
     src/ProfileEngine.cpp
@@ -34,6 +35,7 @@ if(WIN32)
         wbemuuid
         dxgi
         d3d11
+        d3dcompiler
         user32
         gdi32
         shell32
